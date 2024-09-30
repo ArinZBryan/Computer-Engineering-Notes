@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "a2471a2e93cebe3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "00cf3c4d9ea9abc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "201d28159afaf0e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AICE1003/30-09-2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d433275695db3b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "90f68e6b65bd8644",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97c94b44bcc12e16",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6e9b6cc100d15d12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4ca1a25034c0f445",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5625511c4deba88d",
+    "type": "split",
+    "children": [
+      {
+        "id": "458a4cc30e31e7d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "984c4a23e82cc94f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AICE1003/30-09-2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "612e47635e3186be",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AICE1003/30-09-2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4dd89dff33430a3c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8010a81a19b3b6c0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AICE1003/30-09-2024.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "201d28159afaf0e1",
+  "lastOpenFiles": [
+    "AICE1003/30-09-2024.md",
+    "AICE1000-Labs",
+    "AICE1002",
+    "AICE1001",
+    "AICE1004",
+    "AICE1003",
+    "Welcome.md"
+  ]
+}
