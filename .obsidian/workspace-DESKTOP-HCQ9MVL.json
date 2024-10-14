@@ -178,15 +178,6 @@
   },
   "active": "8f67e723fdf43ca1",
   "lastOpenFiles": [
-    "AICE1004/Relations and Functions.md",
-    "AICE1004/images/Visual Proof.png",
-    "AICE1004/images/Set Operations.png",
-    "AICE1004/images/Minkowski Sum.png",
-    "AICE1004/images",
-    "AICE1004/Proof.md",
-    "AICE1004/Set Theory.md",
-    "AICE1004/Logic 2.md",
-    "AICE1004/Logic 1.md",
     "AICE1003/01-10-2024.md",
     "AICE1003/04-10-2024.md",
     "AICE1004/03-01-2024.md",
@@ -216,6 +207,9 @@
     "AICE1002/images/Combinatorial_Logic-NOR_with_x.png",
     "AICE1002/Combinatorial Logic.md",
     "AICE1002/images/Combinatorial_Logic-NAND_with_x.png",
+    "AICE1002/images/Combinatorial_Logic-XOR_with_x.png",
+    "AICE1002/images/Combinatorial_Logic-OR_with_x.png",
+    "AICE1002/images/Combinatorial_Logic-NOT_with_x.png",
     "AICE1002/images",
     "AICE1002/02-10-2024.md",
     "AICE1002/01-10-2024.md",
@@ -223,6 +217,11 @@
     "AICE1000-Labs/AICE1001_Lab1",
     "SUCSS",
     "New folder",
-    "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md"
+    "AICE1000-Labs/AICE1003_Lab1/helloworld.py",
+    "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md",
+    "AICE1000-Labs/AICE1003 Lab 1/AICE1003 P0 - Hello, World!.md",
+    "AICE1004/30-09-2024.md",
+    "AICE1003/30-09-2024.md",
+    "Welcome.md"
   ]
 }

@@ -1,4 +1,3 @@
-### GDPR
 - Started in May 2018
 - National/International law that regulates how data is stored and used
 - Applies to all orgs processing, handling or storing the personal data of individuals residing in the EU, regardless of where the organisation is located.
@@ -22,8 +21,17 @@
 	- **Rights related to Automated Decision Making and Profiling**: you are protected against decisions made solely by automated mechanisms.
 - ##### Obligations for Organisations
 	- **Data protection by design and default**: Data should be protected always on purpose and by design. This should be the default.
-	- **Data Protection Impact Assessments (DPIAs)**: If data is being used to determine some high-risk outcome (eg. immigration), an assessment must be made and made public.
+	- **Data Protection Impact Assessments (DPIAs)**: If data is being used to determine some high-risk outcome (e.g. immigration), an assessment must be made and made public.
 	- **Data Breach Notifications**: In the event of an breach, organisations are required to notify the relevant authorities (Information Commissioner's Office in the UK) and individuals.
 	- **Data Protection Officers**: Required for organisations to have a person or office that can be contacted for GDPR matters.
 	- **International Transfers**: If data is collected on citizens whom the GDPR applies, if transferred outside of GDPR countries, the GDPR still applies. There may also be further regulations.
 	- *Organisations in breach of the GDPR can face 20 million euro fines, or 4% of operating revenue, whichever is higher.*
+### DPIA
+DPIAs (Data Protection Impact Assessments) are the forms / documentation for the methods and reasons for data collection under the GDPR. This documentation is made publicly available, and will be viewed if the company is investigated regarding violations of the GDPR. Here are some of the items that are required to be on such documentation
+- Description of scope
+	- What is the nature of the data? Does it include special category or criminal offence data?. How much are you collecting? How long will you keep it? How many individuals are affected.
+- Description of context
+	- What is the nature of the relationship between the individuals and the data collector? How much control will they have of their data? Would the expect you to use their data the way you are? Does the data include data collected on children?
+- Description of purposes of processing
+- Identification of risks
+- Identification of risk reduction measures.
