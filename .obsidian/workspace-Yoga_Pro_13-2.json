@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1004/Logic 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1004/Logic 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1004/Logic 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1004/Set Theory.md"
+                "file": "AICE1004/Logic 1.md"
               }
             }
           }
@@ -171,7 +171,6 @@
   "active": "8f67e723fdf43ca1",
   "lastOpenFiles": [
     "AICE1002/System Verilog.md",
-    "AICE1004/Logic 1.md",
     "AICE1002/Combinatorial Logic.md",
     "AICE1004/Relations and Functions.md",
     "AICE1004/Set Theory.md",
@@ -183,6 +182,7 @@
     "AICE1004/Proof.md",
     "AICE1004/10-10-2024.md",
     "AICE1004/Logic 2.md",
+    "AICE1004/Logic 1.md",
     "AICE1001/EU AI Act.md",
     "SUCSS/OSINT.md",
     "SUCSS",
