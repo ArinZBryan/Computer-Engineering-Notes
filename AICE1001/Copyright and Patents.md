@@ -22,3 +22,12 @@ There are also some limitations to copyright:
 A patent is a exclusive right granted for an invention, which may be a new and useful process, machine method of manufacture. There are two main types of patents:
 - **Utility Patent**: This is granted for new and useful inventions or discovery. The thing patented is *how it is used* and *how it works*
 - **Design Patent**: This is granted for what something looks like. This type of patent may be granted to protect things such as buildings as well as devices. For example, the design of a device, such as a phone, will be patented
+Patent holders are granted the exclusive right to make, use, sell and import the patented invention for a limited period (usually 20 years from the filing date for utility patents, and 15 years from the granting date for design patents)
+##### Requirements for patentability
+- **Novelty:** The innovation must be new, and not previously known or used by others
+- **Non-Obviousness:** The invention must not be obvious to a person with ordinary skill in the relevant field.
+- **Usefulness**: The invention must have a practical utility
+##### Disclosure
+In exchange for protection of your patent, the inventor must publicly disclose detailed information about the invention. The information must be sufficiently easy to understand that once the patent expires, someone else could implement the designs described within
+##### Application Process
+To obtain a patent, you must file it with the relevant patent office. This involves giving detailed information regarding the invention, the scope of the protection and examination by a patent examiner.

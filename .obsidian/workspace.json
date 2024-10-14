@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1001/Software Licencing.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,6 +33,18 @@
                     false
                   ]
                 }
+              }
+            }
+          },
+          {
+            "id": "63ef2f9e5af2eb43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AICE1004/Relations and Functions.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -103,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1001/Software Licencing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1004/Set Theory.md",
+                "file": "AICE1001/Software Licencing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1004/Set Theory.md"
+                "file": "AICE1001/Software Licencing.md"
               }
             }
           }
@@ -170,20 +182,23 @@
   },
   "active": "8f67e723fdf43ca1",
   "lastOpenFiles": [
-    "AICE1002/System Verilog.md",
-    "AICE1004/Logic 1.md",
-    "AICE1002/Combinatorial Logic.md",
+    "AICE1001/Copyright and Patents.md",
+    "AICE1001/Software Licencing.md",
     "AICE1004/Relations and Functions.md",
+    "AICE1001/EU AI Act.md",
+    "AICE1001/GDPR.md",
     "AICE1004/Set Theory.md",
+    "Todo.md",
+    "AICE1004/Proof.md",
+    "AICE1004/Logic 1.md",
+    "AICE1004/Logic 2.md",
+    "AICE1002/System Verilog.md",
+    "AICE1002/Combinatorial Logic.md",
     "AICE1004/images/Visual Proof.png",
     "AICE1004/images/Set Operations.png",
     "AICE1004/images/Minkowski Sum.png",
     "AICE1004/images",
-    "Todo.md",
-    "AICE1004/Proof.md",
     "AICE1004/10-10-2024.md",
-    "AICE1004/Logic 2.md",
-    "AICE1001/EU AI Act.md",
     "SUCSS/OSINT.md",
     "SUCSS",
     "AICE1000-Labs/AICE1003_Lab2/logbook.md",
@@ -191,8 +206,6 @@
     "AICE1000-Labs/AICE1003_Lab2/main2.py",
     "AICE1000-Labs/AICE1003_Lab2/main copy.py",
     "AICE1000-Labs/AICE1003_Lab2/tests.txt",
-    "AICE1001/Copyright and Patents.md",
-    "AICE1001/GDPR.md",
     "Untitled Kanban.md",
     "AICE1003/01-10-2024.md",
     "AICE1001/03-10-2024.md",
@@ -214,7 +227,6 @@
     "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md",
     "AICE1000-Labs/AICE1003 Lab 1/AICE1003 P0 - Hello, World!.md",
     "AICE1004/30-09-2024.md",
-    "AICE1003/30-09-2024.md",
-    "Welcome.md"
+    "AICE1003/30-09-2024.md"
   ]
 }

@@ -88,3 +88,5 @@ The direct product of two sets ($A,B$) is the set of ordered pairs $(a,b)$ where
 The Cartesian product is a specialised type of direct product, however, given that we are operating on two sets, with no further structure, they are in practice identical.
 > [!note] Cartesian Exponential
 > If using the cartesian product on the same set multiple times ($A\times A\times A$), we may notate this as $A^3$
+
+It is important to note that the cartesian product is not commutative, that is, $A\times B \ne B\times A$
