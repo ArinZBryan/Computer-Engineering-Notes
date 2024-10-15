@@ -8,41 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f67e723fdf43ca1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AICE1001/Software Licencing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0daa9b3ee04e0e11",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Todo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false
-                  ]
-                }
-              }
-            }
-          },
-          {
-            "id": "63ef2f9e5af2eb43",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1004/Relations and Functions.md",
+                "file": "AICE1004/Relations.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1001/Software Licencing.md",
+                "file": "AICE1004/Relations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1001/Software Licencing.md",
+                "file": "AICE1004/Relations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1001/Software Licencing.md"
+                "file": "AICE1004/Relations.md"
               }
             }
           }
@@ -180,16 +151,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f67e723fdf43ca1",
+  "active": "0daa9b3ee04e0e11",
   "lastOpenFiles": [
-    "AICE1001/Copyright and Patents.md",
+    "AICE1004/Set Theory.md",
+    "AICE1004/Proof.md",
+    "AICE1004/Relations.md",
+    "AICE1000-Labs/AICE1003_Lab2/Lab_P2.ipynb",
+    "AICE1000-Labs/AICE1003_Lab2/small-attention.png",
+    "AICE1000-Labs/AICE1003_Lab2/logbook.png",
+    "AICE1000-Labs/AICE1003_Lab2/guessinggame.py",
+    "AICE1000-Labs/AICE1003_Lab2/tempconvert.py",
+    "AICE1000-Labs/AICE1003_Lab2/copydoves.py",
+    "AICE1000-Labs/AICE1003_Lab2/adventure.py",
+    "AICE1000-Labs/AICE1003_Lab2/adventure_advanced.py",
+    "AICE1000-Labs/AICE1003_Lab2",
+    "AICE1004/Functions.md",
+    "AICE1004/images/Relation Composition.png",
+    "Todo.md",
+    "AICE1002/Computer Arithmetic.md",
+    "AICE1002/images/Computer Arithmetic - IEE754.png",
+    "AICE1002/images/Computer Arithmetic - Base 10 Long Multiplication.png",
+    "AICE1002/images/Computer Arithmetic - Base 2 Long Multiplication.png",
     "AICE1001/Software Licencing.md",
-    "AICE1004/Relations and Functions.md",
+    "AICE1001/Copyright and Patents.md",
     "AICE1001/EU AI Act.md",
     "AICE1001/GDPR.md",
-    "AICE1004/Set Theory.md",
-    "Todo.md",
-    "AICE1004/Proof.md",
     "AICE1004/Logic 1.md",
     "AICE1004/Logic 2.md",
     "AICE1002/System Verilog.md",
@@ -201,32 +187,16 @@
     "AICE1004/10-10-2024.md",
     "SUCSS/OSINT.md",
     "SUCSS",
-    "AICE1000-Labs/AICE1003_Lab2/logbook.md",
-    "AICE1000-Labs/AICE1003_Lab2/main3.py",
-    "AICE1000-Labs/AICE1003_Lab2/main2.py",
-    "AICE1000-Labs/AICE1003_Lab2/main copy.py",
-    "AICE1000-Labs/AICE1003_Lab2/tests.txt",
+    "AICE1000-Labs/AICE1003_Lab1/logbook.md",
+    "AICE1000-Labs/AICE1003_Lab1/main3.py",
     "Untitled Kanban.md",
     "AICE1003/01-10-2024.md",
     "AICE1001/03-10-2024.md",
     "AICE1003/04-10-2024.md",
     "AICE1002/images/Combinatorial_Logic-Karnaugh_Map_with_x.png",
-    "AICE1002/images/Combinatorial_Logic-Karnaugh_Maps.png",
-    "AICE1002/images/Combinatorial_Logic-Tri-State_Buffer.png",
-    "AICE1002/images/Combinatorial_Logic-Multiplexer.png",
-    "AICE1002/images/Combinatorial_Logic-NOR_with_x.png",
-    "AICE1002/images/Combinatorial_Logic-NAND_with_x.png",
-    "AICE1002/images/Combinatorial_Logic-XOR_with_x.png",
-    "AICE1002/images",
     "AICE1002/02-10-2024.md",
     "AICE1002/01-10-2024.md",
     "AICE1000-Labs/AICE1001_Lab1/OSINT.md",
-    "AICE1000-Labs/AICE1001_Lab1",
-    "SUCSS",
-    "New folder",
-    "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md",
-    "AICE1000-Labs/AICE1003 Lab 1/AICE1003 P0 - Hello, World!.md",
-    "AICE1004/30-09-2024.md",
-    "AICE1003/30-09-2024.md"
+    "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md"
   ]
 }
