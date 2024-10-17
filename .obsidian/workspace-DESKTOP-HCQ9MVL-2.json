@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e17d462462cc6d44",
+        "id": "eea08a33ea7dda02",
         "type": "tabs",
         "children": [
           {
-            "id": "08cd1bb34835930e",
+            "id": "0daa9b3ee04e0e11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1001/EU AI Act.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1001/EU AI Act.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1001/EU AI Act.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1004/Cardinality.md"
+                "file": "AICE1001/EU AI Act.md"
               }
             }
           }
@@ -151,43 +151,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08cd1bb34835930e",
+  "active": "0daa9b3ee04e0e11",
   "lastOpenFiles": [
-    "AICE1004/Functions.md",
-    "AICE1004/Relations.md",
-    "Todo.md",
-    "AICE1004/Cardinality.md",
-    "AICE1003/01-10-2024.md",
-    "AICE1003/04-10-2024.md",
-    "AICE1002/Sequential Logic.md",
-    "AICE1002/images/Sequential Logic - T Type Latch.png",
-    "AICE1002/images/Sequential Logic - SR Latch State Transitions.png",
-    "AICE1002/images/Sequential Logic - D Bistable.png",
-    "AICE1002/images/Master-Slave JK Bistable with Preset-Clear Lines.png",
-    "AICE1002/images/Sequential Logic - Master-Slave JK Bistable.png",
-    "AICE1002/images/Sequential Logic - JK Bistable Oscillation Mode.png",
+    "AICE1001/GDPR.md",
+    "AICE1001/Software Licencing.md",
+    "AICE1002/Combinatorial Logic.md",
     "AICE1002/System Verilog.md",
-    "AICE1002/images/Sequential Logic - Clock Signal.png",
-    "AICE1002/images/Computer Arithmetic - IEE754.png",
-    "AICE1002/images/Computer Arithmetic - Base 10 Long Multiplication.png",
-    "AICE1002/images/Computer Arithmetic - Base 2 Long Multiplication.png",
     "AICE1002/Computer Arithmetic.md",
+    "AICE1004/Logic 2.md",
+    "AICE1004/Logic 1.md",
+    "AICE1004/Relations.md",
     "AICE1004/Set Theory.md",
     "AICE1004/Proof.md",
     "AICE1000-Labs/AICE1003_Lab2/Lab_P2.ipynb",
+    "AICE1000-Labs/AICE1003_Lab2/small-attention.png",
+    "AICE1000-Labs/AICE1003_Lab2/logbook.png",
     "AICE1000-Labs/AICE1003_Lab2/guessinggame.py",
     "AICE1000-Labs/AICE1003_Lab2/tempconvert.py",
     "AICE1000-Labs/AICE1003_Lab2/copydoves.py",
     "AICE1000-Labs/AICE1003_Lab2/adventure.py",
     "AICE1000-Labs/AICE1003_Lab2/adventure_advanced.py",
     "AICE1000-Labs/AICE1003_Lab2",
-    "AICE1001/Software Licencing.md",
+    "AICE1004/Functions.md",
+    "AICE1004/images/Relation Composition.png",
+    "Todo.md",
+    "AICE1002/images/Computer Arithmetic - IEE754.png",
+    "AICE1002/images/Computer Arithmetic - Base 10 Long Multiplication.png",
+    "AICE1002/images/Computer Arithmetic - Base 2 Long Multiplication.png",
     "AICE1001/Copyright and Patents.md",
     "AICE1001/EU AI Act.md",
-    "AICE1001/GDPR.md",
-    "AICE1004/Logic 1.md",
-    "AICE1004/Logic 2.md",
-    "AICE1002/Combinatorial Logic.md",
+    "AICE1004/images/Visual Proof.png",
+    "AICE1004/images/Set Operations.png",
+    "AICE1004/images/Minkowski Sum.png",
     "AICE1004/images",
     "AICE1004/10-10-2024.md",
     "SUCSS/OSINT.md",
@@ -195,9 +190,13 @@
     "AICE1000-Labs/AICE1003_Lab1/logbook.md",
     "AICE1000-Labs/AICE1003_Lab1/main3.py",
     "Untitled Kanban.md",
+    "AICE1003/01-10-2024.md",
     "AICE1001/03-10-2024.md",
+    "AICE1003/04-10-2024.md",
+    "AICE1002/images/Combinatorial_Logic-Karnaugh_Map_with_x.png",
     "AICE1002/02-10-2024.md",
     "AICE1002/01-10-2024.md",
-    "AICE1000-Labs/AICE1001_Lab1/OSINT.md"
+    "AICE1000-Labs/AICE1001_Lab1/OSINT.md",
+    "AICE1002/Drawing 2024-10-01 12.13.04.excalidraw.md"
   ]
 }

@@ -10,6 +10,7 @@ kanban-plugin: board
 - [ ] Prove answers to AICE1004 1.2.1.40
 - [ ] Notes for AICE1004 1.2
 - [ ] Come back to notes on relations and functions, check back with lecture recording
+- [ ] Notes needed on well-ordering
 
 
 ## Done
