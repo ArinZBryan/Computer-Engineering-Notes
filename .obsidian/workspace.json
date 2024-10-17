@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1002/System Verilog.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1002/System Verilog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1004/Cardinality.md",
+                "file": "AICE1002/System Verilog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1004/Cardinality.md"
+                "file": "AICE1002/System Verilog.md"
               }
             }
           }
@@ -153,10 +153,10 @@
   },
   "active": "08cd1bb34835930e",
   "lastOpenFiles": [
-    "AICE1004/Functions.md",
-    "AICE1004/Relations.md",
     "Todo.md",
     "AICE1004/Cardinality.md",
+    "AICE1004/Functions.md",
+    "AICE1004/Relations.md",
     "AICE1003/01-10-2024.md",
     "AICE1003/04-10-2024.md",
     "AICE1002/Sequential Logic.md",
