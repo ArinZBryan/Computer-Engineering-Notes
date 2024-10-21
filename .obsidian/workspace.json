@@ -8,15 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "08cd1bb34835930e",
+            "id": "d2d9abc1bc437ad6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AICE1002/System Verilog.md",
+                "file": "AICE1004/Cardinality.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Cardinality"
+            }
+          },
+          {
+            "id": "aa859105c3129929",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "AICE1004/AICE1004Book.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AICE1004Book"
             }
           }
         ]
@@ -44,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -52,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -62,7 +80,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -86,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AICE1002/System Verilog.md",
+                "file": "AICE1001/Software Licencing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +114,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Software Licencing"
             }
           },
           {
@@ -103,10 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AICE1002/System Verilog.md",
+                "file": "AICE1001/Software Licencing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Software Licencing"
             }
           },
           {
@@ -117,7 +141,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,8 +152,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AICE1002/System Verilog.md"
-              }
+                "file": "AICE1001/Software Licencing.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Software Licencing"
             }
           }
         ]
@@ -151,27 +179,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08cd1bb34835930e",
+  "active": "d2d9abc1bc437ad6",
   "lastOpenFiles": [
-    "Todo.md",
+    "AICE1004/Pasted image 20241021152555.png",
+    "AICE1004/AICE1004Book.pdf",
     "AICE1004/Cardinality.md",
     "AICE1004/Functions.md",
-    "AICE1004/Relations.md",
+    "AICE1004/images/Cantor's Diagonal Argument.png",
+    "AICE1001/Software Licencing.md",
+    "AICE1001/Copyright and Patents.md",
+    "AICE1001/EU AI Act.md",
+    "AICE1001/GDPR.md",
+    "AICE1002/Combinatorial Logic.md",
+    "AICE1002/Computer Arithmetic.md",
+    "AICE1002/Sequential Logic.md",
+    "AICE1002/System Verilog.md",
     "AICE1003/01-10-2024.md",
     "AICE1003/04-10-2024.md",
-    "AICE1002/Sequential Logic.md",
+    "AICE1004/AICE1004Book.pdf.crdownload",
+    "AICE1000-Labs/AICE1001_Lab2/Fingerprinting.md",
+    "AICE1000-Labs/AICE1001_Lab2",
+    "AICE1000-Labs/Untitled.md",
+    "AICE1000-Labs/AICE1000_LabX1/Untitled.md",
+    "AICE1000-Labs/AICE1000_LabX1",
+    "Todo.md",
+    "AICE1004/Relations.md",
     "AICE1002/images/Sequential Logic - T Type Latch.png",
     "AICE1002/images/Sequential Logic - SR Latch State Transitions.png",
     "AICE1002/images/Sequential Logic - D Bistable.png",
     "AICE1002/images/Master-Slave JK Bistable with Preset-Clear Lines.png",
     "AICE1002/images/Sequential Logic - Master-Slave JK Bistable.png",
     "AICE1002/images/Sequential Logic - JK Bistable Oscillation Mode.png",
-    "AICE1002/System Verilog.md",
     "AICE1002/images/Sequential Logic - Clock Signal.png",
     "AICE1002/images/Computer Arithmetic - IEE754.png",
     "AICE1002/images/Computer Arithmetic - Base 10 Long Multiplication.png",
-    "AICE1002/images/Computer Arithmetic - Base 2 Long Multiplication.png",
-    "AICE1002/Computer Arithmetic.md",
     "AICE1004/Set Theory.md",
     "AICE1004/Proof.md",
     "AICE1000-Labs/AICE1003_Lab2/Lab_P2.ipynb",
@@ -180,24 +221,11 @@
     "AICE1000-Labs/AICE1003_Lab2/copydoves.py",
     "AICE1000-Labs/AICE1003_Lab2/adventure.py",
     "AICE1000-Labs/AICE1003_Lab2/adventure_advanced.py",
-    "AICE1000-Labs/AICE1003_Lab2",
-    "AICE1001/Software Licencing.md",
-    "AICE1001/Copyright and Patents.md",
-    "AICE1001/EU AI Act.md",
-    "AICE1001/GDPR.md",
     "AICE1004/Logic 1.md",
     "AICE1004/Logic 2.md",
-    "AICE1002/Combinatorial Logic.md",
-    "AICE1004/images",
     "AICE1004/10-10-2024.md",
     "SUCSS/OSINT.md",
-    "SUCSS",
     "AICE1000-Labs/AICE1003_Lab1/logbook.md",
-    "AICE1000-Labs/AICE1003_Lab1/main3.py",
-    "Untitled Kanban.md",
-    "AICE1001/03-10-2024.md",
-    "AICE1002/02-10-2024.md",
-    "AICE1002/01-10-2024.md",
-    "AICE1000-Labs/AICE1001_Lab1/OSINT.md"
+    "Untitled Kanban.md"
   ]
 }

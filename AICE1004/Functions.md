@@ -41,3 +41,11 @@ For each of these, there are simple visual tests you can do to check if each of 
 	If any horizontal line does not intersect the graph of the function at least once, then the function is not surjective.
 - Bijective: All of them
 	To test if a function is bijective, perform the tests for if it is injective and if it is surjective. If either are not true, then the function is not bijective.
+##### Multivariable
+A multivariable function is simply one which has a domain that is the result of the cartesian product of two or more sets. This often notated as $f(x,y)$, but may also be notated as $f(x_1, x_2, x_3, \dots)$ or $f(x)$, if $x$ is a known vector.
+##### Vector
+A vector function is one that has a codomain that is the result of the cartesian product of two or more sets. This has no notation for calling the function, but when defining a function, the results are laid out in a tuple, denoting the different values.
+
+Functions may be simultaneously multivariable and vector functions.
+##### Function-Space
+It is also possible for a function to take another function as an argument. Examples of this include Fourier transforms and Laplace transforms. 

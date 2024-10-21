@@ -35,7 +35,7 @@ Below, each logic gate is defined, with its type, name, output and input. Using 
 The output node of a gate is always the first argument.
 To finish a module definition, the `endmodule` statement is used.
 ### Arrays
-System Verilog also supports arrays. An array is defined using the following code: `logic [7:0] a`. This would define an array called `a`, with a length of 8. For some reason, unlike everyone else, arrays are defined with the highest valid array index first, followed by the first valid index.
+System Verilog also supports arrays. An array is defined using the following code: `logic [7:0] a`. This would define an array called `a`, with a length of 8. For some reason, unlike everyone else, arrays are defined with the highest valid array index and the lowest, in any order (`logic [0:7] a` is also valid)
 Arrays are useful for inputs, outputs, internal variables and busses.
 ### Literals
 There are a few ways to write literals in System Verilog.
