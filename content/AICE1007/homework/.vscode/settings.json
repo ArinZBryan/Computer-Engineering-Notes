@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "/home/arinb/comp_eng_notes/AICE1007/homework/week3/1a.c"
+}
