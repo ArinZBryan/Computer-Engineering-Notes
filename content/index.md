@@ -3,7 +3,19 @@ Notes for Southampton University Computer Engineering course
 ### Updating the online notes
 To update the online notes, run the following commands
 ```pwsh
-cd c:\users\arinb\OneDrive\Documents\quartz
+cd c:\users\arinb\OneDrive\Documents\Computer_Engineering\Notes
 npx quartz sync
 ```
-Or, push this repository to remote (assuming that the pre-push hook as been put in)
+
+### Updating Quartz Version
+This quartz-generated site applies several patches:
+- Resizable markdown-style images
+	- Resizable images are only supported on _wikilink_ style images by default. This type of image is incompatible with the CSS snippet used for embedding the `float: left`, `float: right` and `float: centre` CSS properties to select images, as it relies on using alt-text to add custom CSS classes to images without using HTML embeds
+	- The patch used is from [here](https://github.com/iceprosurface/quartz-blog/commit/5900d5617e2bcf79745cc79104379f803f2a5735) and if one day, the [related issue](https://github.com/jackyzha0/quartz/issues/625) gets fixed/the patch gets merged, then this patch will be removed
+	- The patch affects the following files:
+		- `quartz.config.ts`
+		- `ofm.ts`
+	- This means that there is no guarantee that updating the quartz version will not break entirely. Thus, care should be taken to resolve any merge conflicts when pulling from upstream.
+- Support of CSS Snippets. 
+	- The _Obsidian-Style Markdown_ plugin does not have a method for supporting custom CSS snippets to inject into every page.
+	- To support this, `quartz.layout.ts` is modified. In theory, as a configuration file change, this shouldn't change much, so it shouldn't result in many (if any) merge conflicts.

@@ -21,6 +21,8 @@ DNS is a _distributed_, _hierarchical_ system. At the top level, domain names ar
 | SRV   | Service Location            | Used as a general service record for newer services instead of protocol specific records like MX |
 | TXT   | Text Record                 | Uninterrupted text record, now used for RFC1464, SPF, DKIM, DMARC, DNS-SD, ...                   |
 | HINFO | Host Information            | Minimal-sized response to ANY query                                                              |
+> [!important] ANY requests
+> An ANY request is a request to a DNS server that returns all records pertaining to a specific domain. This therefore can include all the information in the table above, though it may only include the HINFO field to prevent misuse of ANY queries.
 ### Getting a DNS server
 The most common type of query is an `A` or `AAAA` query that gets IP addresses for a given hostname. To do this, we assume that we already know the address of a DNS server that can take our request. This can be found in many places: 
 - the ADSL router in a home network

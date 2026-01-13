@@ -6,17 +6,19 @@ kanban-plugin: board
 
 ## Todo (Low Priority)
 
+- [ ] AICE2003 Capacitors
+- [ ] AICE2003 Inductors
+- [ ] AICE2003 Real Circuit Components
+- [ ] AICE2001 Errors
+- [ ] TV Licence
 
 
 ## Todo (High Priority)
 
-- [ ] AICE2001 Errors
-- [ ] AICE2003 Real Circuit Components
-- [ ] AICE2003 Inductors
-- [ ] AICE2003 Capacitors
-- [ ] Starworks Control Bootcamp Series @{2025-10-14}
-- [ ] Starworks Optimal Thrust Vector Control @{2025-10-14}
-- [ ] Starworks Design Optimal Guidance and Control @{2025-10-14}
+- [ ] Starworks _Holly_
+- [ ] AICE2001 Maths Coursework
+- [ ] AICE2004 Coursework
+- [ ] AICE2005 Group Coursework
 
 
 ## Homework
@@ -31,12 +33,15 @@ kanban-plugin: board
 - [ ] AICE1005: Optimisation (Lecture 26)
 - [ ] AICE1008: Numerical solutions to differential equations
 - [ ] AICE1005: Solving Linear Programmings (Lecture 25)
+- [ ] Starworks Control Bootcamp Series @{2025-10-14}
 
 
 ## Done
 
 **Complete**
+- [x] Starworks Design Optimal Guidance and Control @{2025-10-14}
 - [x] AICE1008 Sample Question Worksheet
+- [x] Starworks Optimal Thrust Vector Control @{2025-10-14}
 - [x] AICE1005 Recursive Time Complexity Worksheet
 - [x] AICE1005: Good Solutions (Lecture 23)
 - [x] AICE1005: NP Completeness (Lecture 22)

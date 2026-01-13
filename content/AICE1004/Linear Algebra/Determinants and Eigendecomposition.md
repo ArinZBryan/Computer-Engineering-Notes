@@ -39,4 +39,12 @@ $$\det(\lambda\mathbf{I}-\mathbf{A}) = \det\left(\begin{bmatrix}\lambda&0\\0&\la
 $$\det(\lambda\mathbf{I}-\mathbf{A})=\lambda^2-\lambda(a+d)+ad-bc=\lambda^2-\lambda\text{Tr}(\mathbf{A})+\det(\mathbf{A})$$
 > Note the use of the trace (sum of values in primary diagonal - top left to bottom right) and determinant functions here. While they are commonly seen when describing the characteristic polynomial, they only really serve to complicate things. The only advantage to using them is that it allows for faster lookup of values, and scales to apply to matrices of any size.
 
-Once the eigenvalues have been determined, they may then be plugged back in to the charac
+Once the eigenvalues have been determined, we can then move on to finding the eigenvectors of the square matrix. To do this, we find the non-trivial solutions of 
+$$(\lambda\mathbf{I}-\mathbf{A})\mathbf{x}=\mathbf{0}$$
+Where $\lambda$ is one of the eigenvalues, $\mathbf{x}$ is an unknown vector that is _not_ the zero vector and $\mathbf{0}$ is the zero vector. This is repeated for all values of $\lambda$ to get all eigenvectors. 
+It is possible, even likely to get infinite solutions to $\mathbf{x}$ when $\mathbf{A}$ contains many zeros. In this case, the eigenvector can be any of the solutions so long as the solution is not the zero vector, though it is convention to give eigenvectors that are of unit length, so choosing a solution which either gives this or makes it easy is preferred.
+##### Eigendecomposition Matrices
+Finally, now that we have the eigenvectors and eigenvalues of the matrix, we can complete the decomposition by packing them into matrices. The eigenvectors are placed as columns of a matrix $\mathbf{U}$, and the eigenvalues as entries in the diagonal matrix $\mathbf{\Sigma}$.
+Following this, we then have the decomposition:
+$$\mathbf{A} = \mathbf{U\Sigma U}^{-1}$$
+

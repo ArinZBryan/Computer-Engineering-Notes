@@ -54,3 +54,20 @@ Until recently, the most vulnerable part of a WPA2/3 protected network was the h
 ###### Wi-Fi protected setup
 Many home routers offer the ability to quickly connect a device to a network by entering a short code or pressing a button on the router. However, these codes can be easily brute forced, and it is recommended to disable this feature on modern routers.
 ### DNS Security
+DNS is such a commonly used system that it is a prime target for attacks. As a result, it is prudent to look into the security of DNS and how easy it is to compromise.
+##### Unencrypted Traffic
+DNS is a completely unencrypted protocol. As a result, it is incredibly easy to view and spoof DNS traffic for your own gain. This means that all manner of attacks become viable due to the trust placed in any and all packet metdata.
+##### DNS Amplification
+One method of using DNS to attack a target is by sending lots of DNS requests with spoofed source IPs. This means that when the DNS server responds to these requests, it will send the traffic to someone else. If you only requested a small amount of data, this may be fine, but assuming that the traffic makes it to the spoofed source IP and you make large requests, such as ANY queries, the target device can be overwhelmed with traffic from only a little traffic out of your devices.
+##### Cache Poisoning
+Another method of attack using DNS is to pretend to be a response to a local DNS resolver for some specific query. This allows you to very simply redirect any legitimate queries for a domain to an IP of your choosing. This will then stay in the cache of the local DNS resolver until it is invalidated and it receives a genuine response from a DNS resolver to correct the error. An alternative way to do this attack is to intercept the traffic in-flight and alter it.
+##### Usage Patterns
+Even if a 3rd party is not trying to redirect you or otherwise harm your internet-enabled experience, they are still able to compromise you. Rather, they can find out data about you using only your DNS queries. More specifically, by timing when you make queries where, they can completely recognise your usage patterns. While this does not sound so bad on the face of it, it actually allows for the start of other attacks or even just data harvesting for tracking you using your usage patterns.
+##### DNSSEC
+DNSSEC is a protocol extension on DNS that allows for DNS requests and responses to be cryptographically signed. This means that when DNSSEC is in use, cache poisoning and in some cases DNS amplification attacks can be made irrelevant. However, despite the upsides, there is one major roadblock: despite being available for over 10 years, it has not been comprehensively rolled out. This is partially due to the fact that it naturally increases the size of DNS traffic on networks and requires that proper cryptographic signing is done, which is obviously not completely without its own complexities.
+##### Other Security Measures
+On top of DNSSEC, there are also other measures that can be taken to ensure security while still using an insecure DNS. Here are just a few methods:
+- Block resolver lookups from non-local IP addresses
+- Ignore certain request types (such as ANY)
+- BCP38 (protects against IP spoofing)
+- New-ish RFCs with newer, smarter ways of doing DNS security
