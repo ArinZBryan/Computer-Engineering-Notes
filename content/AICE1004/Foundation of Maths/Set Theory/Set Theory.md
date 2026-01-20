@@ -1,4 +1,4 @@
-	**There are two main types of set theory:**
+**There are two main types of set theory:**
 - Naïve set theory
 - Zermelo-Fraenkel set theory (ZFC)
 >[!info] Why are there two types of set theory?

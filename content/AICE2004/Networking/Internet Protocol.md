@@ -21,10 +21,12 @@ This unreliability means that there is no guarantee given that any packet will a
 Each connection on a network has something called a _maximum transmission unit_ (MTU). This is the largest possible PDU (Protocol Data Unit - an umbrella term for packets, datagrams, segments, etc.) that can be carried across the link. If more data than can fit in an MTU needs to be sent, then the data must be split into multiple packets- this is called fragmentation. The exact details of how fragmentation is done is slightly different between IPv4 and IPv6. If this is not done, then generally, a network device with a smaller MTU than the packet is large will simply drop the packet.
 
 Below is an example network, where a client (left) wants to send data to a server (right). To get there the data has to make several hops through switches with various MTUs. The MTU of a specific transmission is labelled in bytes next to the arrow pointing in the direction of data travel.
-![MTU Diagram](./images/mtu.drawio.png)
+![MTU Diagram](../images/mtu.drawio.png)
 ##### IPv4
 In IPv4, a packet may be fragmented at any time. This means that unless the whole payload is larger than the MTU of the first hop, the packet isn't fragmented at all. Using the example above, regardless of whether the packet goes up or down at the first choice, if it is less than 1.5KB, including the header, then it will not be split. However, regardless of which route it then takes, as 1.5KB packet would then need to be split, as the following MTUs are all smaller than 1.5KB. This would involve the routers themselves splitting the packets into new ones that will fit the next hop.
-Packets are not reassembled by any other switches, so the server may receive more packets than were originally sent by the client, regardless, they are reassembled into the payload at their destination.
+Packets are not reassembled by any other switches, so the server may receive more packets than were originally sent by the client, regardless, they are reassembled into the payload at their destination. All IPv4 devices are required to be able to process packets up to 576 bytes (including all headers), so the MTU for IPv4 must always be larger than or equal to 576 bytes.
+
+Alternatively, IPv4 can perform 'Path MTU discovery' by sending packets of increasing/decreasing size set with the 'do not fragment' flag. Then, when the packet encounters a device with an MTU smaller than its size, it will send an ICMP 'fragmentation needed' packet, which will help set the path MTU. This process is generally avoided on IPv4 as it is often very fragile and is often broken by misconfigured firewalls or tunnels that do not pass ICMP traffic.
 ##### IPv6
 In IPv6, a packet may only be fragmented by the sender, not at any time. This means that if a packet is received by a piece of network equipment with an MTU too small to accept the packet, it is dropped, and the device sends back an ICMPv6 'Packet Too Large' message to the original sender. The original sender then must perform something called _Path MTU Discovery_ (PMTUD) to find what the largest allowable MTU is that will not need to be fragmented at any point along the transmission. This is given a lower bound of 1280 bytes - all devices with an MTU lower than 1280 bytes are not considered IPv6 compliant.
 ### Address Conventions
@@ -114,7 +116,7 @@ Because of these two reserved addresses, all subnets except for a `/31` are actu
 ##### MAC Address Discovery
 The ethernet standard defines that each device connected via ethernet on a network must have a MAC address. This means that when any device wants to send pretty much anything on its local network, it has to know what the MAC address of the destination is before it can make an ethernet packet. To do this, IPv4 and IPv6 use different protocols - ARP (Address Resolution Protocol) and NDP (Network Discovery Protocol).
 
-Technically, ARP is a separate protocol that operates directly with ethernet packets, whereas NDP is built on top of ICMPv6, making ARP a [link-layer](./Layered%20Network%20Model#Link%20Layer) protocol, rather than the internet layer protocol that NDP is.
+Technically, ARP is a separate protocol that operates directly with ethernet packets, whereas NDP is built on top of ICMPv6, making ARP a [link-layer](Layered%20Network%20Model.md#Link%20Layer) protocol, rather than the internet layer protocol that NDP is.
 ###### ARP
 ARP works by having network devices by using a 'broadcast' message (one that goes to all devices on a network) that asks for the MAC address corresponding to a known IP. When a device that knows the MAC address requested (usually the device in question) sees that message, it responds directly to the sender. Each device also maintains a local cache of MAC addresses that have been seen recently. 
 
@@ -128,11 +130,11 @@ Each device on a network needs to know more than just the MAC addresses and IPs 
 - [Network Prefixes/Subnet Masks](#Netmasks)
 - Default Gateway
 - How addresses are allocated: DHCPv6 or SLAAC usage (IPv6 only)
-- [DNS](./Layered%20Network%20Model#DNS) server information
+- [DNS](Layered%20Network%20Model.md#DNS) server information
 - NTP (Network Time Protocol) information
 To get this information, instead of manually configuring devices, we use automatic configuration. On IPv4 this is done via DHCP (Dynamic Host Configuration Protocol) which is a 'self discovering' protocol, in that devices supporting DHCP will reach out via the network to attempt to find DHCP servers and link up with them. On IPv6, NDP Router Discovery is used to find routers which use SLAAC (StateLess Address AutoConfiguration) or DHCPv6, before a protocol is decided on. Note that a router may use both SLAAC and DHCPv6 at the same time.
 ###### DHCP (IPv4)
-![float-right|100](images/DHCPv4%20Connection.png)When a client turns on, it broadcasts a `DHCPDISCOVER` message. Then, routers (or other DHCP servers) will respond with `DHCPOFFER` messages which may be broadcast or unicast and contains an IP address it can offer to assign and the configuration of the DHCP server. The client will then broadcast a `DHCPREQUEST`, letting the chosen server know of its acceptance. Finally, the chosen DHCP server responds with a `DHCPACK` which confirms and finalises the configuration.
+![float-right|200](images/DHCPv4%20Connection.png)When a client turns on, it broadcasts a `DHCPDISCOVER` message. Then, routers (or other DHCP servers) will respond with `DHCPOFFER` messages which may be broadcast or unicast and contains an IP address it can offer to assign and the configuration of the DHCP server. The client will then broadcast a `DHCPREQUEST`, letting the chosen server know of its acceptance. Finally, the chosen DHCP server responds with a `DHCPACK` which confirms and finalises the configuration.
 ###### NDP Router Discovery
 As part of the NDP process, every so often a router will multicast a 'Router Advertisement', which provides some details about itself. It will also do this when it receives a 'Router Solicitation' which will be multicast by any devices joining the network. The information sent back by a router advertisement carries information like the [prefix](#Netmasks) the network is using, how addresses are allocated (DHCPv6 or SLAAC), DNS server information and implicitly the default router address (where it was sent from).
 ###### DHCPv6/SLAAC

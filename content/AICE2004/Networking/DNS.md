@@ -1,7 +1,7 @@
 DNS is the method by which host/domain names are mapped to IP addresses and IP addresses may be mapped to host/domain names.
 
 > [!info]- Non-Reversable DNS
-> When making a DNS lookup to find a hostname, you are querying a different record than if you were trying to lookup an IP from the hostname. This means that it is not guaranteed that a reverse DNS lookup (IP -> hostname) will give exactly the opposite details as a regular DNS lookup (hostname -> IP). This is commonly used by, for example, google. They will have many servers, each of which will eventually respond to queries to `google.com`, so only one can be chosen. This even changes between whether you are connected via [IPv6](./Internet%20Protocol) or [IPv4](./Internet%20Protocol).
+> When making a DNS lookup to find a hostname, you are querying a different record than if you were trying to lookup an IP from the hostname. This means that it is not guaranteed that a reverse DNS lookup (IP -> hostname) will give exactly the opposite details as a regular DNS lookup (hostname -> IP). This is commonly used by, for example, google. They will have many servers, each of which will eventually respond to queries to `google.com`, so only one can be chosen. This even changes between whether you are connected via [IPv6](Internet%20Protocol.md) or [IPv4](Internet%20Protocol.md).
 
 DNS is a _distributed_, _hierarchical_ system. At the top level, domain names are delegated by ICANN, through TLD registrars, who then may delegate further.
 
@@ -71,4 +71,4 @@ Most DNS nameservers are configured to only respond to either internal requests 
 It is important to note that since DNS requests are not encrypted, any DNS server contacted during the process of DNS resolution may be able to filter or otherwise log DNS requests without your knowledge.
 There are however attempts at making DNS more secure, but as of yet they are still only RFCs, rather than fully implemented protocols.
 ### mDNS
-In some small networks, especially home networks, it is often overkill to have full DNS infrastructure set up. Instead, mDNS, can be used. This works over [multicast](./IPv6%20Features) and provides a zero configuration way of setting up DNS.
+In some small networks, especially home networks, it is often overkill to have full DNS infrastructure set up. Instead, mDNS, can be used. This works over [multicast](IPv6%20Features.md) and provides a zero configuration way of setting up DNS.

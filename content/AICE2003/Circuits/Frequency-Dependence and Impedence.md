@@ -59,3 +59,17 @@ Simply put - inductors want to pass DC current and capacitors want to pass high 
 We then say that idealised capacitors and inductors have no resistance - they have _reactance_, a ratio between voltage and current at a given frequency that causes a $\pm90^\circ$ phase change between current and voltage
 ##### Complex Waves
 Looking at the sin/sin ratio once more, it does not appear to immediately give any useful insights, but if we move to the complex plane, they simplify down nicely. In fact, in this way, it becomes obvious that $\frac{\sin(\omega t)}{\sin(\omega t - \frac{\pi}{2})} = i$ and $\frac{\sin(\omega t)}{\sin(\omega t + \frac{\pi}{2})} = -i$. Thus, what we actually see is that the full 'resistance equivalent' values are actually complex.
+
+|               | Resistor | Capacitor             | Inductor    |
+| ------------- | -------- | --------------------- | ----------- |
+| **Impedance** | $R$      | $\frac{-i}{\omega C}$ | $L\omega i$ |
+This has a nice physical interpretation, for some theoretical component:
+- $Re(z)$ is the resistance
+- $Im(z)$ is the reactance
+- $|z|$ is the effective opposition to current flow at a given frequency
+- $\arg(z)$ is the phase offset of the voltage from the current.
+		- $\arg(z) = x:\theta_V = \theta_I + x$
+##### Using Impedance Values
+In general, impedances work in parallel and series just as resistances do. Specifically, series impedances add and parallel impedances are the reciprocal of the sum of reciprocals.
+### Filters
+In general, a resistor/capacitor network can be thought of as a low-pass filter, whereas a resistor/inductor network is a high-pass filter. Depending on how these are combined, it is possible to make band-pass/cut filters.

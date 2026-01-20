@@ -53,6 +53,10 @@ In a circuit, a transistor can be connected in three ways: common-base, common-e
 ![float-left|200](../images/BJTs/NPN%20BJT%20IV%20graph.png)In general however, the most commonly used configuration is _common-emitter_. In this method of operation, the transistor works as an amplifier with a high 'impedance'. That is, a small voltage change across the base and emitter is amplified as a large change across the collector and emitter.
 
 Depending on the current supplied to the base, you can get differing I/V curves between the collector and emitter and thus, differing levels of amplification.
+
+> [!important] Arrow Direction
+> It is always possible to recognise the type of BJT by the direction the arrow is pointing - it always points towards N-type semiconductor. This means that if the base is N-type, it's an NPN BJT and if the collector/emitter are N-type, it's a PNP BJT
+
 ### Metal-Oxide Field-Effect Transistors
 Unlike BJTs, which are _current-controlled_, MOSFETs are _voltage-controlled devices_. It is for this reason that they are used in digital logic for computation rather than BJTs. Because BJTs need current flow just to remain open, they use a lot of power at all times. On the other hand, because MOSFETs only require voltage to remain in a given state, the only current draw is found when switching states. This allows MOSFETs to be significantly more energy efficient when used for computing. On the other hand, MOSFETs are unable to be used as amplifiers, so while useful for switching, they are not a straight upgrade from BJTs.
 ##### Circuit Symbols
@@ -64,7 +68,7 @@ Unlike BJTs, which have only a single circuit symbol for each type (NPN/PNP), MO
     <td><img src="./../images/MOSFETs/IGFET_P-Ch_Enh_Labelled.svg" style="filter:invert(100%);width:5em;height:5em"><img src="./../images/MOSFETs/IGFET_P-Ch_Enh_Diode_Labelled.svg" style="filter:invert(100%);width:5em;height:5em"></td>
     <td><img src="./../images/MOSFETs/IGFET_P-Ch_Enh_Bulk_Labelled.svg" style="filter:invert(100%);width:5em;height:5em"></td>
     <td><img src="./../images/MOSFETs/IGFET_P-Ch_Enh_Labelled_simplified.svg" style="filter:invert(100%);width:12em;height:5em"></</td>
-    <td><img src="./../images/MOSFETs/Mosfet_N-Ch_Sedra.svg" style="filter:invert(100%);width:12em;height:5em"></</td>
+    <td><img src="./../images/MOSFETs/Mosfet_P-Ch_Sedra.svg" style="filter:invert(100%);width:12em;height:5em"></</td>
     <td><img src="./../images/MOSFETs/IGFET_P-Ch_Dep_Labelled.svg" style="filter:invert(100%);width:5em;height:5em"></td>
   </tr>
   <tr>
@@ -88,3 +92,50 @@ Unlike BJTs, which have only a single circuit symbol for each type (NPN/PNP), MO
   </tr>
 </tbody>
 </table>
+
+> [!important] Arrow Direction
+> When the body terminal is not shown, then the arrow on the circuit element acts in the same way as in a BJT - that is, the arrow points towards N-type semiconductor material. In the case of the P-type, that's the substrate and in the case of N-type that's the terminals.
+> When the body terminal is show, it is the other way around - the arrow points towards P-type semiconductor material.
+##### Types
+Like BJTs, MOSFETs are split into two types, depending on the configuration of N-type versus P-Type semiconductor.
+
+| N-Channel (NMOS)             | P-Channel (PMOS)             |
+| ---------------------------- | ---------------------------- |
+| ![\|350](../images/MOSFETs/NMOS.png) | ![\|350](../images/MOSFETs/PMOS.png) |
+##### Functionality
+Field effect transistors (including MOSFETs) all work on the same primary mechanism. Applying a voltage to the gate acts like a capacitor, with an electric field forming around it. This electric field then attracts/repels electrons/holes within the substrate, which creates or destroys a channel between the source and drain.
+Whether a channel is created or destroyed determines what 'mode' the MOSFET operates in - if a channel is created, the MOSFET is an 'enhancement mode' MOSFET and if a channel is being destroyed, it is in 'depletion mode'
+##### Enhancement Mode
+In a N-channel MOSFET, applying a positive voltage across the gate and the source will build an electric field which attracts the [minority carriers in the P-type semiconductor](./Semiconductors#P-Type%20Semiconductors) - the electrons - to the area just below the insulating metal-oxide layer. This causes this section of semiconductor material to become effectively N-type, creating a channel of [N-type](./Semiconductors#N-Type%20Semiconductors) semiconductor material that electrons can use to flow from the source to the drain.
+
+Oppositely, in a P-channel MOSFET, applying a _negative voltage_ across the gate and the source will create an electric field which attracts the holes in the N-type substrate. This then creates a channel of P-type semiconductor between the source and drain for holes to flow through, thus allowing the movement of current.
+##### Depletion Mode
+A N-channel MOSFET can also be manufactured as a depletion mode MOSFET. In these cases, there is a channel of lightly-doped N-type semiconductor material placed between the heavily doped N-type terminals. When a negative voltage is applied at the gate, this attracts holes in the P-type substrate below the channel, turning the N-type channel into P-type, severing the channel and turning off current flow.
+
+Oppositely a P-channel MOSFET can be manufactured as a depletion mode MOSFET, where a channel of lightly-doped P-type semiconductor is placed between the heavily doped P-type terminals. When a positive voltage is applied at the gate, this attracts electrons from the N-type substrate below the channel, turning the P-type channel into N-type material, severing the channel and turning off current flow. 
+##### Enhancement vs Depletion
+Generally, enhancement-mode MOSFETs are used, as their property of 'turning on', when the correct voltage is applied is generally more useful than depletion-mode's 'turning off' when the correct voltage is applied. More specifically, enhancement mode is what is used to create digital electronics, whereas depletion mode is generally used in more niche applications. 
+
+In this course, depletion-mode MOSFETs' properties and functionality are not examinable.
+##### Enhancement Mode Input Characteristics
+![float-right|400](../images/MOSFETs/PMOS%20with%20channel.png)In general, MOSFETs are simpler to operate than BJTs - once the voltage at the gate $V_g$ is greater than some threshold voltage $V_t$ required to form the channel, the transistor conducts. Increasing the threshold voltage further then increases the width of the channel, lowering the resistance of the MOSFET between the source and drain. Once a channel has been created though, there are also voltage characteristics depending on $V_{DS}$, the voltage between the drain and source. There are three regions in which the MOSFET operates:
+- Linear Region
+	![float-right|150](../images/MOSFETs/MOSFET-IV-Linear.png)When the voltage between the drain and source is low, there is very little depletion area around the terminals and channel. This allows the transistor to operate as if it were simply a resistor, following $V=IR$. 
+- Non-Linear Region
+	![float-right|150](../images/MOSFETs/MOSFET-IV-NONLINEAR.png)However, as the voltage between the drain and source increases, the depletion area around the source, drain and gate begins to increase. This narrows the channel towards the drain end, called 'pinch-off', which increases the resistance of the channel. 
+- Saturation Region
+	![float-right|150](../images/MOSFETs/MOSFET-IV-SATURATION.png)Eventually, the channel will no longer make it to the drain, with depletion layer covering the rest of the way. At this point, the resistance will increase with the current.
+
+![](../images/MOSFETs/MOSFET-IV-Gate-Voltages.png)
+##### CMOS
+![|float-right|200](../images/MOSFETs/CMOS.png)Complimentary Metal-Oxide Semiconductor is a technology that uses one NMOS and one PMOS MOSFET to create a digital switch that has an almost completely digital response curve. By connecting the gates and drain of both an NMOS and PMOS and connecting their sources to ground and $V_{dd}$ respectively, we have an inverter:
+- $V_{in}$ tied to $V_{dd}$
+	- PMOS $V_{GS} = 0 \rightarrow$ switch open/off
+	- NMOS $V_{GS} > 0\rightarrow$ switch closed/on
+- $V_{in}$ tied to $V_{ss}$
+	- PMOS $V_{GS} < 0 \rightarrow$ switch closed/on
+	- NMOS $V_{GS} = 0\rightarrow$ switch open/off 
+
+Using this basic idea, we can then build up to the rest of digital logic, using pull-up PMOS transistors in pairs with pull-down NMOS transistors to directly implement CMOS logic gates.
+
+The primary advantage of CMOS logic, as opposed to TTL or NMOS logic is that it is highly power efficient. This is because there is never a direct path between ground and Vdd. This means that there is completely negligible leakage of current, with power truly being only used during switching.

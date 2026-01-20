@@ -1,4 +1,4 @@
-The link layer is the lowest layer of the [TCP/IP stack](./Layered%20Network%20Model) that deals with the physical transmission of data. In this layer, unlike in the higher layers, data is considered to be given in units of 'frames', in the same way that at the [internet layer](./Layered%20Network%20Model#Internet%20Layer) uses packets. 
+The link layer is the lowest layer of the [TCP/IP stack](Layered%20Network%20Model.md) that deals with the physical transmission of data. In this layer, unlike in the higher layers, data is considered to be given in units of 'frames', in the same way that at the [internet layer](Layered%20Network%20Model.md#Internet%20Layer) uses packets. 
 
 Because there are also so many different ways by which data can be physically moved, there are also a lot of differing protocols, each dealing with one specific solution. However, because these protocols all need to eventually deal with higher layers on the TCP/IP stack, they all share at least one feature: the MAC address. This is a six byte address, sometimes also called the 'physical address' that, no matter _how_ data enters and exits a device, still uniquely identifies the device on the network.
 ### Common Standards
@@ -18,7 +18,7 @@ There are all sorts of esoteric and unique methods for sending data in the link 
 Pretty much universally, protocols at the link layer don't just send the data in binary, they usually encode it to make it more resilient to corruption, usually by using more than  just the state of the voltage to encode information.
 There are some common encodings used such as [Manchester encoding](https://en.wikipedia.org/wiki/Manchester_code), [8b/10b](https://en.wikipedia.org/wiki/8b/10b_encoding) and more. The simplest of these, Manchester encoding, for example, works by encoding bits by rising and falling changes in the signal rather than the signal itself.
 
-![Manchester Encoding](./images/Manchester_encoding_both_conventions.svg)
+![Manchester Encoding](../images/Manchester_encoding_both_conventions.svg)
 ##### Packets/Frames
 In the link layer, unlike in the higher layers, the payload is not just given a header, it is in fact prefixed with a header and postfixed with footer, though this may be as small as a single byte. This is generally a longer pattern which is used to specify the end of the PDU. This is needed because unlike the layers above, protocols at this layer tend not to specify a length field explicitly and require a footer.
 

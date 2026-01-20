@@ -27,7 +27,7 @@ When trying to send a packet between two hosts on the internet, there can be man
 At the host, and each router thereon, the first decision that needs to be made is whether the packet is destined for a host that is link-local and can be reached directly, or needs to be sent on to another router. 
 
 > [!info] Gateways
-> A gateway is simply a router that connects a subnet to its higher parent [subnet](./Internet%20Protocol#Subnets) (e.g. a [`/24`](./Internet%20Protocol#Netmasks) to a [`/23`](./Internet%20Protocol#Netmasks)). However, not all packets need to go through a router - specifically, any link-local packets are, by definition, not routed and are destined for other devices on the same subnet.
+> A gateway is simply a router that connects a subnet to its higher parent [subnet](Internet%20Protocol.md#Subnets) (e.g. a [`/24`](Internet%20Protocol.md#Netmasks) to a [`/23`](Internet%20Protocol.md#Netmasks)). However, not all packets need to go through a router - specifically, any link-local packets are, by definition, not routed and are destined for other devices on the same subnet.
 
 ##### Routing Tables
 To facilitate that, devices on a network maintain a 'routing table' that tell it where it should send packets destined for specific IP ranges. Below are example routing tables on windows 11 (obtained via abridged versions of `route print -4` and `route print -6`)
@@ -76,7 +76,7 @@ Active Routes:
  21    281 ff00::/8                      On-link
 ===========================================================================
 ```
-Note that all `On-Link` gateways are simply link-local or are the machine itself. There are several interface active on this machine, which are represented differently between [IPv4](./Internet%20Protocol) and [IPv6](Internet%20Protocol). On [IPv6](./Internet%20Protocol) they are numbered (on the `If` column) and on [IPv4](./Internet%20Protocol), they have differing [addresses](./Internet%20Protocol#Address%20Conventions) which must be cross-referenced with another table. 
+Note that all `On-Link` gateways are simply link-local or are the machine itself. There are several interface active on this machine, which are represented differently between [IPv4](Internet%20Protocol.md) and [IPv6](Internet%20Protocol.md). On [IPv6](Internet%20Protocol.md) they are numbered (on the `If` column) and on [IPv4](Internet%20Protocol.md), they have differing [addresses](Internet%20Protocol.md#Address%20Conventions) which must be cross-referenced with another table. 
 
 > [!important] Routing Order
 > As can be seen in the above tables, routing tables often contain duplicate routes, or can contain address ranges that contain each other. This means that one must be chosen over the other. To do this, a specific order is always used.
@@ -91,7 +91,7 @@ Note that all `On-Link` gateways are simply link-local or are the machine itself
 > 	- To get to `192.168.15.10`, the route highlighted in <span style="color:rgb(162, 185, 226)">light blue</span> would be used. While the route under it and the route above it could also get to `192.168.15.10`, it is the most specific, as it has the smallest netmask.
 > 	- To get to `10.10.10.50`, the route highlighted in <span style="color:rgb(197, 90, 17)">orange</span> would be taken. While there are two other gateways above it that would also work, the highlighted one has the lowest metric.
 ##### Routing to the Internet
-When the destination address is not link-local, the packet needs to be sent to a connected subnet that may know the way. To do this, the packet must be sent to the _default gateway_. This is the gateway that all packets are sent that cannot be delivered directly. This is generally seen as the gateway on the routing table with a destination of `0.0.0.0/0` or its equivalent in [IPv6](./Internet%20Protocol), [`::/0`](./Internet%20Protocol#IPv6%20Address%20Simplification). The default router usually has a much larger routing table, often with thousands of entries that quickly change to stay up to date with the fastest routes.
+When the destination address is not link-local, the packet needs to be sent to a connected subnet that may know the way. To do this, the packet must be sent to the _default gateway_. This is the gateway that all packets are sent that cannot be delivered directly. This is generally seen as the gateway on the routing table with a destination of `0.0.0.0/0` or its equivalent in [IPv6](Internet%20Protocol.md), [`::/0`](Internet%20Protocol.md#IPv6%20Address%20Simplification). The default router usually has a much larger routing table, often with thousands of entries that quickly change to stay up to date with the fastest routes.
 ##### Autonomous Systems
 ![|float-right|300](images/Autonomous%20Systems%20Diagram.png)Because of the complication inherent here, manual configuration is simply no longer feasible and so we get routers to configure these things themselves, autonomously. When large groups of routers all have the same policy, usually because they are all owned by the same organisation, they are called _autonomous systems_. The internet is by-and-large made entirely of interconnected autonomous systems, each given a number by the same bodies that hand out IP addresses.
 
@@ -125,7 +125,7 @@ While RIP works well with simple network topologies, it does have some significa
 - RIP uses MD5 hashes for authentication
 	MD5 has been broken for many years, so it cannot be considered even remotely cryptographically secure.
 ###### Link-State Routing
-Link-State routing is generally done using one of two main protocols: IS-IS or OSPF. It works by first discovering neighbours and assigning them some cost metric, then broadcasting this information to all routers, not just connected ones. Then, routers on the network can use this information to build an edge-weighted graph, representing the network. By this method, it is possible to make the best possible routing decisions by utilising [Djikstra's Algorithm](./../AICE1005/Algorithms/Graph%20Traversal#Djikstra's%20Algorithm). 
+Link-State routing is generally done using one of two main protocols: IS-IS or OSPF. It works by first discovering neighbours and assigning them some cost metric, then broadcasting this information to all routers, not just connected ones. Then, routers on the network can use this information to build an edge-weighted graph, representing the network. By this method, it is possible to make the best possible routing decisions by utilising [Djikstra's Algorithm](../../AICE1005/Algorithms/Graph%20Traversal.md#Djikstra's%20Algorithm). 
 ###### Link-State vs Distance Vector
 In practice, it is generally preferred to use link-state routing algorithms, as they tend to converge on the best routing faster and are better at avoiding loops. However, in exceedingly large networks, they are also more likely to generate overwhelming amounts of traffic.
 ###### Border Gateway Protocol
@@ -133,4 +133,4 @@ Border Gateway Protocol (BGP) is an _exterior gateway protocol_ and is the gener
 
 While BGP works well, it does have some major downsides, first and foremost of these is that it relies on _trust_. A malicious peer can cause your AS to route traffic to it, rather than the actual best route. It is also quite slow to update, so having systems that activate and deactivate quickly using BGP can have adverse effects on the whole network of autonomous systems. Another one of its major issues is that most routers have quite limited BGP routing tables, so are unable to store all that many nodes. With the exhaustion of IPv4 and the introduction of IPv6, which takes four times the data to store, some older BGP-supporting devices are becoming obsolete.
 
-![Traceroute](./Network%20Tools#traceroute)
+![Traceroute](Network%20Tools.md#traceroute)

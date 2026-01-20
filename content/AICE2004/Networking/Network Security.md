@@ -25,11 +25,11 @@ Usually, firewalls are not actually their own devices - it's often just a piece 
 ###### Stateless vs Stateful
 At their most simple, a firewall is stateless - they just apply the same rules to all packets and beyond that, do not care about the contents of the packet. However, modern firewalls are _stateful_, inspecting the headers of TCP/IP packets, allowing them to keep track of the connections that are being created between the sides of the firewall. This allows them to have filtering rules like "block all incoming traffic on port 80, except traffic that is responding to outgoing requests"
 ###### Application Layer Firewalls
-Even more advanced than stateful firewalls are application layer firewalls (also known as '[layer 7](./Layered%20Network%20Model)' firewalls or 'application layer gateways'). They inspect the contents of packets in higher levels, like HTTP. They can then check to see that the contents of these packets 'look' like what a packet using that protocol 'should'. This does, however, fall down when dealing with encrypted protocols, such as HTTPS, SSH or SSL.
+Even more advanced than stateful firewalls are application layer firewalls (also known as '[layer 7](Layered%20Network%20Model.md)' firewalls or 'application layer gateways'). They inspect the contents of packets in higher levels, like HTTP. They can then check to see that the contents of these packets 'look' like what a packet using that protocol 'should'. This does, however, fall down when dealing with encrypted protocols, such as HTTPS, SSH or SSL.
 ##### Physical Attacks
 If an attacker has physical access to a network, it is much harder to prevent them from doing whatever they want. For instance, a person with physical access to a network could much more easily sniff/splice traffic than someone operating from a remote location.
 
-The simplest way to combat this is by using [MAC address](./Link%20Layer#Example%20Frames) filtering - only routing and switching packets from a list of known good MAC addresses. However, this can usually be easily bypassed.
+The simplest way to combat this is by using [MAC address](Link%20Layer.md#Example%20Frames) filtering - only routing and switching packets from a list of known good MAC addresses. However, this can usually be easily bypassed.
 ###### 802.1x
 ![float-right](images/802.1x%20Network%20Access%20Control.png)IEEE 802.1x is a method by port-based network access control is typically implemented. It defines three parties: the _supplicant_, the _authenticator_ and the _authentication server_. When the _supplicant_ (typically a client device) joins the network, it reaches out to the authenticator (usually a switch or WAP) with its identity. The authenticator then reaches out to a trusted authentication server, which may or may not grant access to the network to the supplicant. If the supplicant is not granted access to the network, the authenticator will then block connections made by the supplicant.
 ###### Sniffing
@@ -37,7 +37,7 @@ Network Access Control doesn't stop parties from sniffing packets if they tap a 
 - 10/100Mb/s networks: hubs can be used as taps
 - GbE: a specific network tap is needed
 - Fibre: a fibre cable can have the sheathing removed and bent in the right way to have enough light spill out the side to be decodable
-- [ARP](./Internet%20Protocol#ARP) cache poisoning can get you sniffing as well
+- [ARP](Internet%20Protocol.md#ARP) cache poisoning can get you sniffing as well
 ### Wireless Security
 Unlike in a wired network, wireless networks are inherently more insecure, as they require packets to effectively be broadcasted to anyone who is listening on the network.
 ##### Wireless Encryption
