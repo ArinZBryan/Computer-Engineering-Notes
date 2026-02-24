@@ -1,4 +1,5 @@
 #maths/applied-maths/signals-and-control 
+
 A system is effectively some black-box function of some inputs that gives some outputs. Systems can take many forms: 
 - linear/non-linear
 - time-invariant/time-varying

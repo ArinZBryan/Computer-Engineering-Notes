@@ -12,6 +12,9 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "quartz:build": "node scripts/pdf-wrappers.mjs && npx quartz build",
+    "quartz:dev": "node scripts/pdf-wrappers.mjs && npx quartz build --serve",
+    "quartz:sync": "node scripts/pdf-wrappers.mjs && npx quartz sync",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
