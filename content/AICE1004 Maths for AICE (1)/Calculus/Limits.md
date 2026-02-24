@@ -42,7 +42,7 @@ The proofs for each of these follow:
 > <marquee> TODO: Finish This</marquee>
 ##### Squeeze Theorem
 If the sequences $a$, $b$ and $c$ are such that for all $n$, $a_n \le b_n \le c_n$, and $a_n$ and $c_n$ converge to the same value, then $b_n$ converges to that value too.
-![Squeeze Theorem Visualisation](../images/Squeeze%20Theorem.png)
+![centre](../images/Squeeze%20Theorem.png)
 It is often far easier to prove the limit of a sequence is squeezed between two other sequences than it is to prove the limit of a sequence equals a value directly, though of course, this is not always the case. Alternatives to this method include using L'Hopital's Rule or proving the limit directly, by reducing it all to terms of $\frac 1x$.
 ##### Boundedness 
 A sequence can be considered bounded if all elements of the sequence lie within a strict upper and lower bound. Note that sequences may have multiple upper and lower bounds, so long as the sequence's values lies entirely within the set formed by the bounds.

@@ -133,9 +133,6 @@ In practice, it is generally preferred to use link-state routing algorithms, as 
 Border Gateway Protocol (BGP) is an _exterior gateway protocol_ and is the generally accepted protocol for communication between autonomous systems. While it is generally similar to distance vector based routing protocols, it does provide more information about routes through and between autonomous systems that allow it to be more efficient than that.
 
 While BGP works well, it does have some major downsides, first and foremost of these is that it relies on _trust_. A malicious peer can cause your AS to route traffic to it, rather than the actual best route. It is also quite slow to update, so having systems that activate and deactivate quickly using BGP can have adverse effects on the whole network of autonomous systems. Another one of its major issues is that most routers have quite limited BGP routing tables, so are unable to store all that many nodes. With the exhaustion of IPv4 and the introduction of IPv6, which takes four times the data to store, some older BGP-supporting devices are becoming obsolete.
-
-![Traceroute](Network%20Tools.md#traceroute)
-
 ### Routing in Practice
 ##### Sending a packet to a link-local address
 If we have a packet that we want to send to an address on the same subnet as us, we perform ARP or Neighbour Solicitation/Discovery to get the MAC address of the device. Then, we simply send the packet out, via the switch (layer 2) , which will forward it on to the destination device based on its MAC address. 

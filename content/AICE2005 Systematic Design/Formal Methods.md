@@ -22,8 +22,6 @@ While each problem and model is different, they are all split up into a few main
 - Pre/Post Conditions - the conditions before/after an operation can/must take place.
 ### Formal Modelling and Verification using Event-B
 The Event-B language is split into two main sections: contexts and machines. First, the contexts are defined. Then a machine is created to take in a context and operate within it. This machine may then be refined into another machine that operates in abstract like the one it refines, but also may take in or perform more concrete actions rather than abstract actions ('open the door' vs 'set the linear actuator to 0% extension over the next second')
-##### Expressions
-![Event-B Summary PDF](EventB-Summary.pdf)
 ##### Contexts
 ```
 CONTEXT ContextName

@@ -1,15 +1,17 @@
 #software/networking
 On any given computer, there are several pieces of software that comprise the 'network stack'. This is done to allow for easy replacement and debugging of any individual piece. To model this 'stack', there are two main models - OSI and TCP/IP. While some people _do_ use OSI, it is becoming increasingly common to use TCP/IP rather than OSI.
 
-|                                         | OSI                                             | TCP/IP                                                    |
-| --------------------------------------- | ----------------------------------------------- | --------------------------------------------------------- |
-| <span style="color:red">7</span>        | <span style="color:red">Application</span>      |                                                           |
-| <span style="color:red">6</span>        | <span style="color:red">Presentation</span>     | <span style="color:red">Application</span>                |
-| <span style="color:red">5</span>        | <span style="color:red">Session</span>          |                                                           |
-| <span style="color:yellow">4</span>     | <span style="color:yellow">Transport</span>     | <span style="color:yellow">Transport/Host-to-host</span>  |
-| <span style="color:green">3</span>      | <span style="color:green">Network</span>        | <span style="color:green">Internet/Network</span>         |
-| <span style="color:dodgerblue">2</span> | <span style="color:dodgerblue">Data Link</span> | <span style="color:dodgerblue">Link/Network Access</span> |
-| <span style="color:dodgerblue">1</span> | <span style="color:dodgerblue">Physical</span>  |                                                           |
+<table style="width:100%">
+<tr><th>OSI Number</th><th>OSI Name</th><th>TCP/IP</th></tr>
+<tr><td><span style="color:red">7</span></td><td><span style="color:red">Application</span></td><td rowspan="3" style="vertical-align:middle"><span style="color:red">Application</span></td></tr>
+<tr><td><span style="color:red">6</span></td><td><span style="color:red">Presentation</span></td></tr>
+<tr><td><span style="color:red">5</span></td><td><span style="color:red">Session</span></td></tr>
+<tr><td><span style="color:yellow">4</span></td><td><span style="color:yellow">Transport</span></td><td><span style="color:yellow">Transport/Host-to-host</span></td></tr>
+<tr><td><span style="color:green">3</span></td><td><span style="color:green">Network</span></td><td><span style="color:green">Internet/Network</span></td></tr>
+<tr><td><span style="color:dodgerblue">2</span></td><td><span style="color:dodgerblue">Data Link</span></td><td rowspan="2" style="vertical-align:middle"><span style="color:dodgerblue">Link/Network Access</span></td></tr>
+<tr><td><span style="color:dodgerblue">1</span></td><td><span style="color:dodgerblue">Physical</span></td></tr>
+</table>
+
 The abstraction provided by this allows not just for easy maintenance of this structure in the real world, but is also useful when trying to model whole networks, irrespective of the exact hardware running the network - each device will act on one (or several) of these layers. Thus, all we need to worry about are the interactions between these levels.
 ![float-right|300](../images/UDP_encapsulation.svg)One other advantage of this model is that it allows for end-to-end transparency - for two devices, their application layer will only 'see' the other computer's application layer, transport will only 'see' transport, network only  'sees' network and so on. To lower level layers, the upper layers are simply just binary blobs they don't care about, and to the higher level layers, the lower levels simply don't exist beyond invoking them or receiving a binary blob to decode.
 ### Link Layer

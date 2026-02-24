@@ -120,7 +120,7 @@ $$
 f'(c) = \frac{f(b) - f(a)}{b - a}
 $$
 Put in English, this is saying that between the two points $a$ and $b$, there exists a point $c$, where $\frac{df}{dx}$ is equal to the slope of a line connecting $f(a)$ and $f(b)$.
-![](../images/Mean%20Value%20Theorem.png)
+![centre](../images/Mean%20Value%20Theorem.png)
 The version of the MVT shown above is called the *Lagrangian MVT*, however, this can be extended to *Cauchy's MVT*. This is a more complex version of this theorem that instead of stating that the derivative must equal the average slope, states that it equals the slope somewhere of another arbitrary function.
 ### L'Hopital's Rule
 L'Hopital's rule states that given $\lim_{x\to a}g(x)\ne0$ and $\lim_{x\to a}g(x)\ne\pm\infty$ then:

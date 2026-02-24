@@ -13,7 +13,7 @@ To be secure in all of these areas requires many layers of security, each coving
 > [!info] Security through obscurity
 > While a system being unknown _could_ be considered to be part of a system's security, in reality it is not something that can be relied upon. Thus, security through obscurity is not really security at all.
 
-![float-left|300](../images/CVEs%20per%20year.png) For instance, the increasing number of new CVEs created each year demonstrate the sheer quantity of vulnerable software. What could have once been a secure part of your stack, can be discovered to be insecure and vulnerable, needing to be swapped out. For example, in 2021, the _Log4Shell_ exploit in a widely used library called _Log4J_ made all sorts of software using the library vulnerable to attack.
+![CVEs per year](../images/CVEs%20per%20year.png) For instance, the increasing number of new CVEs created each year demonstrate the sheer quantity of vulnerable software. What could have once been a secure part of your stack, can be discovered to be insecure and vulnerable, needing to be swapped out. For example, in 2021, the `Log4Shell` exploit in a widely used library called `Log4J` made all sorts of software using the library vulnerable to attack.
 
 It is also important to take into account the human factor - the software can be completely secure, but a single lazy or malicious person can be all it takes to get into a system.
 

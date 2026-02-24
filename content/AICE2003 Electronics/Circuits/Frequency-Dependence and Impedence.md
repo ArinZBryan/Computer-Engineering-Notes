@@ -2,39 +2,33 @@
 ### Sine Waves Driving Components
 ##### Resistors
 ![centre|350](../images/Circuit%20Diagrams/ac_resistor.png)
-$$\begin{align}
-\tag{1}&V_S(t)&&=&&V_p\sin(\omega t)\\
-\tag{2}&V_R(t)&&=&&V_S(T)&&\text{by KVL}\\
-\tag{3}&&&=&&V_p\sin(\omega t)&&\text{by (1)}\\
-\tag{4}&I(t)&&=&&\frac{V_s(t)}{R}&&\text{by Ohm's Law}\\
-\tag{5}&&&=&&\frac{V_p\sin(\omega t)}{R}&&\text{by (1)}
-\end{align}$$
+
+$$V_S(t)=V_p\sin(\omega t)$$
+$$V_R(t)=V_S(T)\text{ by KVL}$$
+$$=V_p\sin(\omega t)\text{ by (1)}$$
+$$I(t)=\frac{V_s(t)}{R}\text{ by Ohm's Law}$$
+$$\frac{V_p\sin(\omega t)}{R}\text{by (1)}$$
 Note that $V_S(t)$, $V_R(t)$ and $I(t)$ are all of the same frequency ($\omega$) and have the same phase. They do no necessarily have the same amplitude though.
 ##### Capacitors
 ![centre|350](../images/Circuit%20Diagrams/ac_capacitor.png)
-$$\begin{align}
-\tag{1}&V_S(t)&&=&&V_p\sin(\omega t)\\
-\tag{2}&V_C(t)&&=&&V_S(T)&&\text{by KVL}\\
-\tag{3}&&&=&&V_p\sin(\omega t)&&\text{by (1)}\\
-\tag{4}&I(t)&&=&&C\ \frac{d}{dt}[V_C(t)]&&\text{by Capacitor Equation}\\
-\tag{5}&&&=&&C\ \frac{d}{dt}[V_S(t)]&&\text{by (2)} \\
-\tag{6}&&&=&&C\ \frac{d}{dt}[V_p\sin(\omega t)]&&\text{by (1)} \\
-\tag{7}&&&=&&C\left(V_p\omega\cos(\omega t)\right)&&\text{differentiate w.r.t. }t \\
-\tag{8}&&&=&&\omega CV_p\sin\left(\omega t + \frac{\pi}{2}\right)&&\text{apply trigonometric identity}\\
-\end{align}$$
+$$V_S(t)=V_p\sin(\omega t)$$
+$$V_C(t)=V_S(T)\text{by KVL}$$
+$$=V_p\sin(\omega t)\text{ by (1)}$$
+$$I(t)=C\ \frac{d}{dt}[V_C(t)]\text{ by Capacitor Equation}$$
+$$=C\ \frac{d}{dt}[V_S(t)]\text{ by (2)}$$
+$$=C\ \frac{d}{dt}[V_p\sin(\omega t)]\text{ by (1)}$$
+$$=C\left(V_p\omega\cos(\omega t)\right)\text{ differentiate w.r.t. }t$$$$=\omega CV_p\sin\left(\omega t + \frac{\pi}{2}\right)\text{ apply trigonometric identity}$$
 So, from these equations, we can see that the frequency of the current through a capacitor remain the same as the voltage, the phase of the waveform is shifted forward by 90 degrees.
 ##### Inductors
 ![centre|350](../images/Circuit%20Diagrams/ac_inductor.png)
-$$\begin{align}
-\tag{1}&V_S(t)&&=&&V_p\sin(\omega t)\\
-\tag{2}&V_L(t)&&=&&V_S(T)&&\text{by KVL}\\
-\tag{3}&&&=&&V_p\sin(\omega t)&&\text{by (1)}\\
-\tag{4}&I(t)&&=&&\frac{1}{L}\ \int^t_{-\infty}V_L(\tau)d\tau&&\text{by Inductor Equation}\\
-\tag{5}&&&=&&\frac{1}{L}\ \int^t_{-\infty}V_p\sin(\omega t)d\tau&&\text{by (2)} \\
-\tag{6}&&&=&&-\frac{V_p}{L\omega}\cos(\omega t)&&\text{integration of }\sin(xt)\\
-\tag{7}&&&=&&\frac{V_p}{L\omega}\cos\left(\omega t + \pi\right)&&\text{apply trigonometric identity} \\
-\tag{8}&&&=&&\frac{V_p}{L\omega}\sin\left(\omega t + \frac{3\pi}{2}\right)
-\end{align}$$
+$$V_S(t)=V_p\sin(\omega t)$$
+$$V_L(t)=V_S(T)\text{by KVL}$$
+$$=V_p\sin(\omega t)\text{ by (1)}$$
+$$I(t)=\frac{1}{L}\ \int^t_{-\infty}V_L(\tau)d\tau\text{ by Inductor Equation}$$
+$$=\frac{1}{L}\ \int^t_{-\infty}V_p\sin(\omega t)d\tau\text{ by (2)}$$
+$$=-\frac{V_p}{L\omega}\cos(\omega t)\text{ integration of }\sin(xt)$$
+$$=\frac{V_p}{L\omega}\cos\left(\omega t + \pi\right)\text{ apply trigonometric identity}$$
+$$=\frac{V_p}{L\omega}\sin\left(\omega t + \frac{3\pi}{2}\right)$$
 From these equations, we can see that while the frequency remains the same, the phase of the current is offset by 270 (-90) degrees.
 ### Impedance
 ##### An equivalent to resistance

@@ -65,7 +65,6 @@ deactivate
 > This means that installing a package from `apt`, via the `python3-xxxx` convention and then again from `pip` can cause python to get very confused about which package to use when and whether to overwrite various packages when installing. 
 > 
 > Thus, though the error message has been supressed, it is important to remember that python packages and libraries should still be installed in a virtual environment where possible and if not possible, using `apt`. Usage of `pip` in the global scope will still present a warning against the use of `sudo pip`, but this can safely be ignored. (still don't use `sudo pip` ever though)
-
 ### bsk-ros2-bridge Example Code (bsk-ros2-mpc)
 ##### Setup and install dependencies
 ```

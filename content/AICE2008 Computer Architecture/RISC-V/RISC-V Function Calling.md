@@ -2,7 +2,7 @@
 
 Like in x86 where there are multiple calling conventions that can be used (`__stdcall`, `__fastcall`, `__vectorcall`, `__cdecl`), RISC-V has multiple calling conventions (psABI and EABI). In practice, EABI is only really used on embedded RISC-V using the [`RV32E`](RISC-V%20Instructions.md#RISC-V%20Instruction%20Set%20Variants) architecture. This module will only really touch on the more common psABI.
 ### The Stack
-![float-right|200](images/Stack%20Layout.png)The psABI defines only two rules when it comes to the stack - the stack grows down to lower addresses and the stack pointer must be initialised to an 8-byte aligned address. Otherwise, the exact positions of the stack, heap, static data sections and text sections are entirely up to the OS, or on embedded systems, the linker script. Further, due to _position independent executables_ and ASLR, the locations of these sections are often randomized between processes.
+![float-right|200](../images/Stack%20Layout.png)The psABI defines only two rules when it comes to the stack - the stack grows down to lower addresses and the stack pointer must be initialised to an 8-byte aligned address. Otherwise, the exact positions of the stack, heap, static data sections and text sections are entirely up to the OS, or on embedded systems, the linker script. Further, due to _position independent executables_ and ASLR, the locations of these sections are often randomized between processes.
 ### Saving Registers
 When calling a function, the registers of the calling code need to be set up to allow for the function to be called. The below table defines the RV32I registers and which code is responsible for saving the values of these registers to the stack before use/function calls.
 

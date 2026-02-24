@@ -21,7 +21,7 @@ All instructions in `RISC32I` can be categorised into six categories:
 - Jump Unconditionally (J)
 
 The bit-formats of each of these instructions can be seen in the below table:
-![RISC-V Instruction Bit Formats](images/RISCV%20Instruction%20Types.png)
+![RISC-V Instruction Bit Formats](../images/RISCV%20Instruction%20Types.png)
 
 It can be noticed that each of these instructions has a 7-bit opcode, which would suggest that only 128 instructions are possible. However, R, I, S and B type instructions have 'sub-instructions', which are analogous to microcode. For instance, adding two registers and subtracting two registers (both R-type) shares the same opcode, and only differ by `funct7`, which encodes the specific functionality to perform. Other examples include: `sll`, `slt`, `sltu`, `xor`, `srl`, `sra`, `or` and `and`, which all share the same opcode, but differ in their `funct7` and `funct3`.
 ##### Shuffled Immediate Bits
