@@ -4,7 +4,7 @@ Notes for Southampton University Computer Engineering course
 To update the online notes, run the following commands
 ```pwsh
 cd c:\users\arinb\OneDrive\Documents\Computer_Engineering\Notes
-npx quartz sync
+npm run quartz:sync
 ```
 
 ### Updating Quartz Version
@@ -19,3 +19,14 @@ This quartz-generated site applies several patches:
 - Support of CSS Snippets. 
 	- The _Obsidian-Style Markdown_ plugin does not have a method for supporting custom CSS snippets to inject into every page.
 	- To support this, `quartz.layout.ts` is modified. In theory, as a configuration file change, this shouldn't change much, so it shouldn't result in many (if any) merge conflicts.
+- Custom Markdown PDF Wrapper Generator
+	- PDFs are by default made public, but only by URL. By running a custom pre-build script, we can generate markdown pages embedding the PDF before the main build to ensure that the PDFs are easily accessable
+	- The patch affects the following files:
+		- `scripts/pdf-wrappers.mjs`
+		- `quartz.config.ts`
+		- `.github/workflows/deploy.yaml`
+		- `package.json`
+	- This patch also replaces the following quartz commands:
+		- `npx quartz build` -> `npm run quartz:build`
+		- `npx quartz build --serve` -> `npm run quartz:dev`
+		- `npx quartz sync` -> `npm run quartz:sync`

@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-GB",
     baseUrl: "arinzbryan.github.io/Computer-Engineering-Notes",
-    ignorePatterns: ["private", "templates", ".obsidian", "todo"],
+    ignorePatterns: ["private", "templates", ".obsidian", "todo.md", "Todo.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
