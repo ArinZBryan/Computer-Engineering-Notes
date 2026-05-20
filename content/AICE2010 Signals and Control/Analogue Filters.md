@@ -12,12 +12,19 @@ There are a few main types of filter that are used:
 | Low Pass / High Stop                        | High Pass / Low Stop                         | Band Pass                                    | Band Stop                                    |
 | ------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
 | ![](images/Ideal%20Low%20Pass%20Filter.png) | ![](images/Ideal%20High%20Pass%20Filter.png) | ![](images/Ideal%20Band%20Pass%20Filter.png) | ![](images/Ideal%20Band%20Stop%20FIlter.png) |
+
 These cut out / allow through different frequencies of an input signal. The range of frequencies that an ideal filter lets through is called its _pass band_, and the range not let through is called the _stop band_.
 
 The ideal filters, as shown above, have what is known as a 'brick wall' response - that is, they exactly cut out the frequencies within a range, such that the frequencies kept have their gain unimpacted and phase offset by a linear function of the frequency. Cut frequencies are removed entirely.
 
 >[!info]- Why is the phase offset being dependent on the frequency ideal?
->For an ideal filter with a phase offset proportional to the frequency we can define it as:$$G(j\omega)=\begin{cases}e^{-kj\omega},0\le|\omega|\le\omega_0\\0,|\omega|>\omega_0\end{cases}$$Then, in the pass band, we get that$$Y(j\omega)=e^{-kj\omega}X(j\omega)$$ and then by the [inverse Fourier transform](./Fourier%20Transforms#Defining%20the%20Fourier%20Transform%20and%20Its%20Inverse),$$y(t)=x(t-k)$$Which is just the original signal, delayed in time by the constant of proportionality. Or, another way of putting it, is that there is _no distortion_ of the signal within the pass-band, which is certainly ideal.
+>For an ideal filter with a phase offset proportional to the frequency we can define it as:
+>$$G(j\omega)=\begin{cases}e^{-kj\omega},0\le|\omega|\le\omega_0\\0,|\omega|>\omega_0\end{cases}$$
+>Then, in the pass band, we get that
+>$$Y(j\omega)=e^{-kj\omega}X(j\omega)$$
+>and then by the [inverse Fourier transform](./Fourier%20Transforms#Defining%20the%20Fourier%20Transform%20and%20Its%20Inverse),
+>$$y(t)=x(t-k)$$
+>Which is just the original signal, delayed in time by the constant of proportionality. Or, another way of putting it, is that there is _no distortion_ of the signal within the pass-band, which is certainly ideal.
 ##### The Impossibility of Ideal Filters
 Defining the [frequency response](./Fourier%20Transforms#Using%20the%20Fourier%20Transform%20on%20LTI%20Systems) of an ideal low-pass filter as:
 $$G(j\omega)=\begin{cases}e^{-kj\omega},0\le|\omega|\le\omega_0\\0,|\omega|>\omega_0\end{cases}$$
@@ -82,13 +89,18 @@ This final inequality can then also be computed to give a minimum value of $n$. 
 By this point, we have a low-pass filter with a cut-off frequency of 1. 
 ###### Arbitrary Low-Pass Filter
 To move the cut-off frequency of the unity low-pass filter to $\omega_0\ne1$, we can set $s\to \frac{s}{\omega_0}$ to give the filter:
-$$G(s)=\frac{1}{\prod^n_{k=1}\left( \left( \frac{s}{\omega_0}-je^{j\Theta_k}\right)\right)}$$$$=\frac{1}{\prod^n_{k=1}\left(\frac{s-j\omega_0e^{j\Theta_k}}{\omega_0}\right)}$$$$=\frac{1}{\left(\frac{\prod^n_{k=1}(s-j\omega_0e^{j\Theta_k})}{\omega_0^n}\right)}$$$$G(s)=\frac{\omega_0^n}{\prod^n_{k=1}(s-j\omega_0e^{j\Theta_k})}$$
+$$G(s)=\frac{1}{\prod^n_{k=1}\left( \left( \frac{s}{\omega_0}-je^{j\Theta_k}\right)\right)}$$
+$$=\frac{1}{\prod^n_{k=1}\left(\frac{s-j\omega_0e^{j\Theta_k}}{\omega_0}\right)}$$
+$$=\frac{1}{\left(\frac{\prod^n_{k=1}(s-j\omega_0e^{j\Theta_k})}{\omega_0^n}\right)}$$
+$$G(s)=\frac{\omega_0^n}{\prod^n_{k=1}(s-j\omega_0e^{j\Theta_k})}$$
+
 ###### Arbitrary High-Pass Filter
 To get a high-pass filter with any cut-off frequency, substitute $s$ for $\frac{\omega_0}{s}$ to get:
 $$G(s)=\frac{1}{\prod^n_{k=1}\left(\frac{\omega_0}{s}-je^{\Theta_k}\right)}$$
 ###### Arbitrary Band-Pass Filter
 To get a band-pass filter, with a pass-band from $\omega_1$ to $\omega_2$, substitute $s=\beta\left(\frac{s}{\omega_0}+\frac{\omega_0}{s}\right)$ with $\beta=\left(\frac{\omega_0}{\omega_2-\omega_1}\right)$ , where $\omega_0$ is $\sqrt{\omega_1\omega_2}$ to get either of the following two options:
 $$G(s)=\frac{1}{\prod^n_{k=1}(\beta(\frac{s}{\omega_0}+\frac{\omega_0}{s})-je^{j\Theta_k})}$$
+
 $$G(s)=\frac{s^n}{\prod^n_{k=1}(\frac{\beta}{\omega_0}s^2-je^{j\Theta_k}s+\beta\omega_0)}$$
 ###### Arbitrary Band-Stop Filter
 To get a band-stop filter, with a stop-band from $\omega_1$ to $\omega_2$, substitute $s=\frac{1}{\beta\left(\frac{s}{\omega_0}+\frac{\omega_0}{s}\right)}=\frac{\omega_0s}{\beta(s^2+\omega_0^2)}$, with the same $\beta$ and $\omega_0$ as in the arbitrary band-pass filter to get:

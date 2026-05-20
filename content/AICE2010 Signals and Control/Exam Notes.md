@@ -10,7 +10,11 @@ $$-20\log_{10}\left|{\frac{1}{\sqrt{1+\left( \frac{\omega}{\omega_0} \right)^{2n
 Butterworth filter order formula:
 $$n\ge\frac{\log\left(\frac{10^{0.1\alpha_s}-1}{10^{0.1\alpha_p}-1}\right)}{\log\left(\frac{\omega_s}{\omega_p}\right)}$$
 Laplace transform of ODE:
-$$y^{(3)} + a_1y^{(2)} + a_2y^{(1)} + a_3y = x^{(3)} + b_1x^{(2)} + b_2x^{(1)} + b_3x$$$$y^{(n)}\to s^n,x^{(m)}\to s^m$$$$s^3+a_1s^2+a_2s^1+a_3=s^3+b_1s^2+b_2s^1+b_3$$$$H(s)=\frac{s^3+b_1s^2+b_2s+b_3}{s^3+a_1s^2+a_2s+a_3}$$
+$$y^{(3)} + a_1y^{(2)} + a_2y^{(1)} + a_3y = x^{(3)} + b_1x^{(2)} + b_2x^{(1)} + b_3x$$
+$$y^{(n)}\to s^n,x^{(m)}\to s^m$$
+$$s^3+a_1s^2+a_2s^1+a_3=s^3+b_1s^2+b_2s^1+b_3$$
+$$H(s)=\frac{s^3+b_1s^2+b_2s+b_3}{s^3+a_1s^2+a_2s+a_3}$$
+
 **Causal transfer functions have a polynomial of smaller or equal order in the numerator than the denominator**
 ##### Transfer function hacks
 - The magnitude of a transfer function is the product of the magnitudes of its poles and zeroes

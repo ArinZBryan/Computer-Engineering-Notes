@@ -1,7 +1,10 @@
 #maths/applied-maths/signals-and-control 
 According to Fourier's theorem, for any periodic signal that can conforms to the relation $x(t + T) = x(t)$, it can also be represented by some potentially infinite sum of trigonometric functions:
 $$x(t)=\frac{a_0}{2}+\sum^\infty_{n=1}[a_n\cos(n\omega_0t)+b_n\sin(n\omega_0t)]$$
-with the coefficients $a_n$ and $b_n$ derived using the following formulas:$$a_n =\frac{2}{T}\int^\frac{T}{2}_{\frac{-T}{2}}x(t)\cos(n\omega_0t)dt$$$$b_n=\frac{2}{T}\int^\frac{T}{2}_\frac{-T}{2}x(t)\sin(n\omega_0t)dt$$Where: $\omega_0 = 2\pi f_0$, $f_0$ is the _repetition_ or _fundamental frequency_, $n$ is an arbitrary integer, such that $nf_0$ will denote the $n^{th}$ harmonic frequency of the fundamental frequency. The coefficients $a_n$ and $b_n$ are known as the Fourier coefficients of $x(t)$ and $\frac{a_0}{2}$ is the _mean value_ of $x(t)$  
+with the coefficients $a_n$ and $b_n$ derived using the following formulas:
+$$a_n =\frac{2}{T}\int^\frac{T}{2}_{\frac{-T}{2}}x(t)\cos(n\omega_0t)dt$$
+$$b_n=\frac{2}{T}\int^\frac{T}{2}_\frac{-T}{2}x(t)\sin(n\omega_0t)dt$$
+Where: $\omega_0 = 2\pi f_0$, $f_0$ is the _repetition_ or _fundamental frequency_, $n$ is an arbitrary integer, such that $nf_0$ will denote the $n^{th}$ harmonic frequency of the fundamental frequency. The coefficients $a_n$ and $b_n$ are known as the Fourier coefficients of $x(t)$ and $\frac{a_0}{2}$ is the _mean value_ of $x(t)$  
 
 As you add more terms, the Fourier series generated will more and more closely approximate the original function.
 ![](images/Square%20Wave%20Fourier%20Trigonometric.png)

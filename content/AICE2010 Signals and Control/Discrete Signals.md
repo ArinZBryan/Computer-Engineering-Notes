@@ -31,12 +31,26 @@ $$x_d(t)=x_c(t)c(t),\hspace{6pt} c(t)=\sum^\infty_{n=-\infty}\delta(t-nT)$$
 The function $c(t)$ is known as a _comb function_, and, by taking the [Fourier series](./Fourier%20Series.md) form of the function, we can get that:
 $$x_d(t)=\frac{1}{T}\sum^\infty_{n=-\infty}x_c(t)e^{jn\omega_dt}$$
 > [!proof]- Taking the Fourier series of the comb function
-> By the definition of the complex exponential form of general Fourier series,$$x(t) = \sum^\infty_{n=-\infty}C_ne^{jn\omega_0t}\hspace{12pt}C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}x(t)e^{-jn\omega_0t}dt$$So, $$C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}\left[\sum^\infty_{n=-\infty}\delta(t-nT)\right]e^{-jn\omega_0t}dt$$But since in the range $\left[-\frac{T}{2}, \frac{T}{2}\right]$ there is only one 'peak' (see graph of $c(t)$ above), $$C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}\delta(t)e^{-jn\omega_0 t}dt$$And by the sifting property of the [Dirac delta function](./Signals.md#Dirac%20Impulse%20Function), $$C_n=\frac{1}{T}e^{jn\omega_0(0)}=\frac{1}{T}(1)=\frac{1}{T}$$This gives a very special coefficient function - for every frequency component in the comb function, it is weighted equally$$x(t)=\frac{1}{T}\sum^\infty_{n=-\infty}e^{jn\omega_0t}$$
+> By the definition of the complex exponential form of general Fourier series,
+> $$x(t) = \sum^\infty_{n=-\infty}C_ne^{jn\omega_0t}\hspace{12pt}C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}x(t)e^{-jn\omega_0t}dt$$So, $$C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}\left[\sum^\infty_{n=-\infty}\delta(t-nT)\right]e^{-jn\omega_0t}dt$$
+> But since in the range $\left[-\frac{T}{2}, \frac{T}{2}\right]$ there is only one 'peak' (see graph of $c(t)$ above), 
+> $$C_n=\frac{1}{T}\int^{\frac{T}{2}}_{-\frac{T}{2}}\delta(t)e^{-jn\omega_0 t}dt$$
+> And by the sifting property of the [Dirac delta function](./Signals.md#Dirac%20Impulse%20Function), 
+> $$C_n=\frac{1}{T}e^{jn\omega_0(0)}=\frac{1}{T}(1)=\frac{1}{T}$$
+> This gives a very special coefficient function - for every frequency component in the comb function, it is weighted equally
+> $$x(t)=\frac{1}{T}\sum^\infty_{n=-\infty}e^{jn\omega_0t}$$
 
 which enables the easy computation of the Fourier series of the discretised version of the original signal:
 $$X_d(f)=f_d\sum^\infty_{n=-\infty}X_c(f-nf_d)$$
 > [!proof]- Deriving the Fourier transform of a discrete signal derived from an instantaneously sampled continuous signal with known Fourier transform
-> Starting at $$x_d(t) = \frac{1}{T}\sum^\infty_{n=-\infty}x_c(t)e^{jn\omega_dt}$$We can use the [linearity of the Fourier transform](./Fourier%20Transforms.md#Properties%20of%20the%20Fourier%20Transform) to get that: $$\mathcal{F}\{x_d\}=X_d(f)=\frac{1}{T}\sum^\infty_{n=-\infty}\mathcal{F}\left\{x_c(t)e^{jn\omega_dt}\right\}$$And by the [frequency shift property of the Fourier transform](./Fourier%20Transforms.md#Properties%20of%20the%20Fourier%20Transform):$$X_d(f)=\frac{1}{T}\sum^\infty_{n=-\infty}X_c\left(f-\left(\frac{n\omega_d}{2\pi}\right)\right)=\frac{1}{T}\sum^\infty_{n=-\infty}X_c(f-nf_d)$$Finally, substituting $1/T$ for $f_d$, we get the final Fourier transform:$$X_d(f)=f_d\sum^\infty_{n=-\infty}X_c(f-nf_d)$$
+> Starting at 
+> $$x_d(t) = \frac{1}{T}\sum^\infty_{n=-\infty}x_c(t)e^{jn\omega_dt}$$
+> We can use the [linearity of the Fourier transform](./Fourier%20Transforms.md#Properties%20of%20the%20Fourier%20Transform) to get that: 
+> $$\mathcal{F}\{x_d\}=X_d(f)=\frac{1}{T}\sum^\infty_{n=-\infty}\mathcal{F}\left\{x_c(t)e^{jn\omega_dt}\right\}$$
+> And by the [frequency shift property of the Fourier transform](./Fourier%20Transforms.md#Properties%20of%20the%20Fourier%20Transform):
+> $$X_d(f)=\frac{1}{T}\sum^\infty_{n=-\infty}X_c\left(f-\left(\frac{n\omega_d}{2\pi}\right)\right)=\frac{1}{T}\sum^\infty_{n=-\infty}X_c(f-nf_d)$$
+> Finally, substituting $1/T$ for $f_d$, we get the final Fourier transform:
+> $$X_d(f)=f_d\sum^\infty_{n=-\infty}X_c(f-nf_d)$$
 ##### Natural Sampling
 Natural sampling is a simple extension of instantaneous sampling, replacing the comb function, built from an infinite series of time-shifted impulses with a 'periodic pulse train', which is built from an infinite series of time-shifted $\text{rect}$ functions of a specific length.  
 
@@ -45,6 +59,13 @@ Natural sampling is a simple extension of instantaneous sampling, replacing the 
 Such a pulse-train is defined as:$$p(t)=\sum^\infty_{n=-\infty}\text{rect}\left(\frac{t-nT}{\tau}\right)$$and functions, in effect, as a switching on/off of the input signal under multiplication. The above plot was generated with pulse-width 0.25 and period 1.
 
 > [!proof]- Deriving the Fourier transform of the rect function
-> Applying the formula for the Fourier transform directly to the $\text{rect}$ function gives us:$$\mathcal{F}\{\text{rect}(t)\}=\int^\infty_{-\infty}\text{rect}(t)e^{j2\pi ft}dt$$But since $\text{rect}(t)=0$ for $t \not\in (-0.5, 0.5)$, we can reduce the integral to a simple finite integral $$\mathcal{F}\{\text{rect}(t)\}=\int^{0.5}_{-0.5}e^{j2\pi ft}dt=\left[\frac{e^{j2\pi ft}}{-j2\pi f}\right]^{0.5}_{-0.5}=\frac{e^{j\pi f}-e^{-j\pi f}}{-j2\pi f}$$Doing some simple rearranging shows that the numerator is simply the sine function$$\mathcal{F}\{\text{rect}(t)\}=\frac{e^{j\pi f}-e^{-j\pi f}}{-j2\pi f}=\frac{e^{-j\pi f}-e^{j\pi f}}{j2\pi f}=\frac{\sin(\pi f)}{\pi f}$$By the definition of $\text{sinc}(f)=\frac{\sin(\pi f)}{\pi f}$,$$\mathcal{F}\{\text{rect}(t)\}=\text{sinc}(f)$$
+> Applying the formula for the Fourier transform directly to the $\text{rect}$ function gives us:
+> $$\mathcal{F}\{\text{rect}(t)\}=\int^\infty_{-\infty}\text{rect}(t)e^{j2\pi ft}dt$$
+> But since $\text{rect}(t)=0$ for $t \not\in (-0.5, 0.5)$, we can reduce the integral to a simple finite integral 
+> $$\mathcal{F}\{\text{rect}(t)\}=\int^{0.5}_{-0.5}e^{j2\pi ft}dt=\left[\frac{e^{j2\pi ft}}{-j2\pi f}\right]^{0.5}_{-0.5}=\frac{e^{j\pi f}-e^{-j\pi f}}{-j2\pi f}$$
+> Doing some simple rearranging shows that the numerator is simply the sine function
+> $$\mathcal{F}\{\text{rect}(t)\}=\frac{e^{j\pi f}-e^{-j\pi f}}{-j2\pi f}=\frac{e^{-j\pi f}-e^{j\pi f}}{j2\pi f}=\frac{\sin(\pi f)}{\pi f}$$
+> By the definition of $\text{sinc}(f)=\frac{\sin(\pi f)}{\pi f}$,
+> $$\mathcal{F}\{\text{rect}(t)\}=\text{sinc}(f)$$
 
 Converting the $\text{rect}$ function to its Fourier series gives us:$$p(f)=\sum^\infty_{n=-\infty}\text{sinc}\left(\frac{t-nT}{\tau}\right)$$
