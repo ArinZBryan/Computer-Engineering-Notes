@@ -101,6 +101,8 @@ This code needs to be run in three terminals. Either use GNU screen, TMUX or cre
 ```
 # Terminal 1: start the bridge
 cd ~/ros2_ws
+source /opt/ros/jazzy/setup.sh
+source innstall/setup.sh
 ros2 launch bsk-ros2-bridge bridge.launch.py
 
 # Terminal 2: start a Basilisk scenario (requires the BSK environment)
@@ -110,5 +112,7 @@ python examples/scenarioRosOrbit_wrench.py
 
 # Terminal 3: start a controller (e.g., BSK-ROS2-MPC)
 cd ~/ros2_ws
+source /opt/ros/jazzy/setup.sh
+source innstall/setup.sh
 ros2 launch bsk-ros2-mpc mpc.launch.py namespace:=bskSat0 type:=wrench use_hill:=False
 ```

@@ -30,3 +30,7 @@ This quartz-generated site applies several patches:
 		- `npx quartz build` -> `npm run quartz:build`
 		- `npx quartz build --serve` -> `npm run quartz:dev`
 		- `npx quartz sync` -> `npm run quartz:sync`
+
+
+$$(\frac{t_d-t_n}{t_d}d_{13}+\frac{t_n}{t_d}d_{23})^2=(ad_{13}+bd_{23})^2<225$$
+$$a^2d$$

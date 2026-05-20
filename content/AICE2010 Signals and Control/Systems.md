@@ -54,3 +54,7 @@ $$y(t) = x(t)*h(t) = \int^\infty_{-\infty}x(\tau)h(t-\tau)d\tau$$
 For a system to be causal, it must also have an impulse response that is causal. However, when dealing with ODEs, this is often not true. We rectify this to make a causal system by multiplying by the _unit step_ function $u(t)$.
 $$u(t) = \begin{cases}t < 0 : 0\\ t\ge 0 : 1\end{cases}$$
 Thus, for any function $f(t)$, $f(t)u(t) = \begin{cases}t<0:0\\ t\ge0:f(t)\end{cases}$.
+###### Causal Differential Equation LTIs
+For an LTI made up of a differential equation of the form:
+$$y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_0y=b_mx^{(m)}+b_{m-1}x^{m-1}+\dots+b_0x$$
+If and only if $n \ge m$, the system is causal.
