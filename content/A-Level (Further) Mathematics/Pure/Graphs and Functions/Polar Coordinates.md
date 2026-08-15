@@ -1,3 +1,4 @@
+#maths/pure-maths/graphing
 It is possible to express a graph in two major forms:
 - Cartesian Coordinates
 - Polar Coordinates

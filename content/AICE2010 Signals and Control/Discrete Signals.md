@@ -1,3 +1,4 @@
+#maths/applied-maths/signals-and-control/signals
 Unlike [continuous signals](./Signals.md), discrete signals only have values for specific instances in time, usually spaced evenly apart. By convention, discrete signals are notated by $x(nT)$ where $T$ is the fixed time between values and $n\in\mathbb{Z}$ is the specific value number. It is also common to notate discrete signals by $x(n)$, omitting the time between values where it is not relevant.
 
 Often, discrete signals are created by _sampling_ a continuous signal to create some discrete one. For example, given the continuous signal $A\cos(\omega t+\theta)$, it could be turned into a discrete one of the form $A\cos(\omega n T +\theta)$, as shown below.

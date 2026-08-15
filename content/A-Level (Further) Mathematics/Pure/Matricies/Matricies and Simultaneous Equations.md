@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra/decomposition-and-solutions 
 It turns out that any set of simultaneous equations can be expressed using matrix multiplication. Simply move the variables into their own vector, ordered top to bottom in what was once left to right. Then the coeffiecients are left in their own matrix, which is multiplied with the variable vector. The results should be left in a new vector on the other side of the equals. By taking the inverse of the matrix of coefficients, and multiplying it on both sides, this leaves the vector of variables on the left, and a vector of results on the right.
 
 ## Examples

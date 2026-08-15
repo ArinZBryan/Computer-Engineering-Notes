@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics
 - $P(Event)$ - The probability of an event happening
 - $P(A \cup B)$ - The probability of $A$ and/or $B$ happening
 - $P(A \cap B)$ - The probability of $A$ and $B$ happening

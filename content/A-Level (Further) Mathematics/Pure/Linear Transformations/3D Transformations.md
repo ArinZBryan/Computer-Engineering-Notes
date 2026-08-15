@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra 
 $\begin{bmatrix}-1 & 0 & 0\newline0 & 1 & 0\newline0 & 0 & 1 \end{bmatrix} \rightarrow$  A reflection in the plane $x = 0$
 
 $\begin{bmatrix}1 & 0 & 0\newline0 & -1 & 0\newline0 & 0 & 1\newline\end{bmatrix} \rightarrow$  A reflection in the plane $y = 0$

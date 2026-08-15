@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra 
 ## Reflections
 $\begin{bmatrix}1&0 \newline 0&-1\end{bmatrix}$ = Reflection in $y = 0$.  
 

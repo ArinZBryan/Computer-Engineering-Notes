@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/integration 
 In some questions, a graph (or section of a graph) may be 'revolved' about an axis.
 This operation is used for finding the volumes of things like vases and donuts. (3D objects with at least one axis of rotational symmetry)
 

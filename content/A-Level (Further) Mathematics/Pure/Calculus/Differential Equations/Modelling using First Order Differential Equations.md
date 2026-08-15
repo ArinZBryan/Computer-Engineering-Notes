@@ -1,3 +1,4 @@
+#maths/applied-maths #maths/pure-maths/calculus/differential-equations 
 Imagine a container (pictured below), with some amount of liquid flowing in at a given rate ($R_{in}$), and flowing out at a given rate ($R_{out}$). The amount of the input fluid in the container is $x$. Using only this information, we can get a single first order differential equation.
 ![Diagram](../../../Images/Modelling_FODE.svg)
 There are four steps to calculate for this kind of question.

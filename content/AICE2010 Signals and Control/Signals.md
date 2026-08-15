@@ -1,4 +1,4 @@
-#maths/applied-maths/signals-and-control
+#maths/applied-maths/signals-and-control/signals
 A continuous signal is represented by a function of the form $x = f(t)$, where $t$ is the current time. Signals may be scalar, complex or otherwise vector-valued. Such a signal may be time-shifted by $h$, which produces another signal that is by convention notated as:
 $$\psi(t) = x(t - h)$$
 Similarly, a signal compressed in time would be notated as: $$\psi(t) = x(2t)$$ In general, derived signals are often notated as $\psi$.

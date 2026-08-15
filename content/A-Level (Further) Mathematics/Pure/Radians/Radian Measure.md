@@ -1,3 +1,4 @@
+#maths/pure-maths/geometry
 ## Converting between degrees and radians
 
 $2\pi$ rad $=360^{\circ}$  

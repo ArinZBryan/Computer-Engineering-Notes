@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra
 There are two operations specific to vectors that are used at A Level:
 ## Dot (scalar) Product
 $\begin{bmatrix} A_1 \newline A_2 \newline \dots \newline A_n\end{bmatrix} \cdot \begin{bmatrix} B_1 \newline B_2 \newline \dots \newline B_n\end{bmatrix} = A_1B_1 + A_2B_2 + \dots + A_nB_n$ 

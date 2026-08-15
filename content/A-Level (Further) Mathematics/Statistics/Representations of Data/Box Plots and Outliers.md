@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics #maths/pure-maths/graphing 
 ## Box plots
 A quick recap of box plots  
 ![Example Box Plot](../../Images/generic_box_plot.drawio.svg)

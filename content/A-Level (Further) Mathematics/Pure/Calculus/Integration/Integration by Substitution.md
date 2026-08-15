@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/integration 
 Integration by substitution is a method of integration where the integrand is replaced with a new variable that makes the integral possible using known integration techniques.
 ## Method
 1. Define a new variable, related to the original in some simple way. This substitution is often given as part of the question

@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/summations #maths/pure-maths/trigonometry
 Suppose we want to sum a series that includes $\sin(n\theta)$ or $\cos(n\theta)$. Strangely the way to do this involves adding a separate series of the other trigonometric function multiplied by $i$.
 
 ## The steps

@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus
 When calculating limits, there are a few basic properties of limits that are useful to remember:
 - The limit of a function multiplied by a constant is equal to the limit of the function multiplied by the same constant.
 - The limit of a sum is the sum of the limits

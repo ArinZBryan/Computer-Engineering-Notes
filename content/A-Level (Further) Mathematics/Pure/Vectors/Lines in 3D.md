@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra
 There are three ways to express a line in 3D space using vectors, where $\underline a$ is a point on the line, and $b$ is the direction vector of the line:
 $$\underline r = \underline a + \lambda\underline b$$
 $$\frac{x-a_x}{b_x} = \frac{y-a_y}{b_y} = \frac{z-a_z}{b_z}$$

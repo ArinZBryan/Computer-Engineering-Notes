@@ -1,3 +1,4 @@
+#maths/applied-maths/signals-and-control 
 Throughout the development of filters, controllers and systems, it is often useful to be able to represent systems graphically. There are generally two ways in which this is done - Nyquist Diagrams and Bode Plots. These two methods show broadly similar information, but are used in different scenarios.
 
 ### Nyquist Diagrams
@@ -10,7 +11,16 @@ This means that the transfer function naturally reduces to the frequency respons
 
 For a given angular frequency $\omega$, $G(j\omega) = a(\omega) + jb(\omega)$. We can then plot the locus of $G(j\omega)$ with $\omega \in (-\infty, \infty)$ onto an argand diagram, since $a(\omega)$ and $b(\omega)$ are real polynomials in $\omega$. The locus of the point $a(\omega) + jb(\omega)$ can provide useful information about the system being plotted.
 ##### Sketching Nyquist Diagrams
-===TODO===
+1. Transform transfer function $G(s)$ into $G(j\omega)$ by substituting $s\to j\omega$.
+2. Realise denominator by multiplying numerator and denominator by complex conjugate
+3. Calculate $Re(G(j\omega))$ and $Im(G(j\omega))$
+4. Calculate $|G(j\omega)|$ and $\angle G(j\omega)$.
+5. Determine the magnitude and argument of the transfer function under the following conditions:
+	- $\lim_{\omega\to0^+}$
+	- $\lim_{\omega\to\infty^+}$
+	- $Im(G(j\omega))=0$
+6. Plot locus through these points
+7. Mirror locus about real axis
 
 > [!example] Nyquist Diagram of $G(s) = \frac{1}{s+1}$
 > ![](images/Nyquist%20Plot%201%20div%20(s+1)(s+2).png)
@@ -26,7 +36,17 @@ Specifically, the plots are of:
 	- X axis: Angular Frequency ($\omega$)
 	- Y axis: Phase Shift ($\angle G(j\omega)$)
 ##### Plotting Bode Plots
-Plotting and sketching bode plots use pretty much the same method - brute force tabulation. That is, you algebraically simplify the logarithmic gain and phase shift formulas, then plug in values of $\omega$ to get points on the respective plots. From this, you then join them up. 
+1. Find the frequencies of zeroes and poles of the transfer function $G(s)$.
+2. Transform any poles and zeroes to be of the forms used in the table below
+3. Collect all constants together as one constant
+4. Draw the Bode plot magnitude and phase plots, where the line on each plot is the sum of the components shown below
 
-> [!example] Bode Plot of $G(s) = \frac{1}{(s+1)(s+2)}$
-> ![](images/Bode%20Plot%201%20div%20s+1.png)
+| Term                | Equation<br>$G(s)=$                                 | Magnitude Plot                                               | Phase Plot                                                   |
+| ------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Constant Multiplier | $k$                                                 | ![](images/bode%20plots/Pasted%20image%2020260518150104.png) | ![](images/bode%20plots/Pasted%20image%2020260518150117.png) |
+| Pole at zero        | $\frac{1}{s}$                                       | ![](images/bode%20plots/Pasted%20image%2020260518145848.png) | ![](images/bode%20plots/Pasted%20image%2020260518145931.png) |
+| Zero at zero        | $s$                                                 | ![](images/bode%20plots/Pasted%20image%2020260518150257.png) | ![](images/bode%20plots/Pasted%20image%2020260518150310.png) |
+| Real Pole           | $\frac{1}{1+\frac{s}{\omega_0}}$                    | ![](images/bode%20plots/Pasted%20image%2020260518152035.png) | ![](images/bode%20plots/Pasted%20image%2020260518152049.png) |
+| Real Zero           | $1+\frac{s}{\omega_0}$                              | ![](images/bode%20plots/Pasted%20image%2020260518152551.png) | ![](images/bode%20plots/Pasted%20image%2020260518152607.png) |
+| Complex Pole        | $\frac{\omega_0^2}{s^2+2\zeta\omega_0s+\omega_0^2}$ | ![](images/bode%20plots/Pasted%20image%2020260518155850.png) | ![](images/bode%20plots/Pasted%20image%2020260518155917.png) |
+| Complex Zero        | $\frac{s^2+2\zeta\omega_0s+\omega_0^2}{\omega_0^2}$ | ![](images/bode%20plots/Pasted%20image%2020260518154413.png) | ![](images/bode%20plots/Pasted%20image%2020260518154621.png) |

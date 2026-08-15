@@ -1,3 +1,4 @@
+#maths/pure-maths/trigonometry 
 # $R\sin(\theta + \alpha)$ and $R\cos(\theta + \alpha)$ Form
 
 When two waveforms are added, generally the result is a wobbly mess. *However*, is the waveforms are sinusoidal ($\sin$ and $\cos$) and have the same periodicity (the same wavelength), then the result is actually another $\sin$ or $\cos$ wave but scaled and shifted. 

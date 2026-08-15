@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ## Venn Diagrams
 
 ### Tree Diagrams

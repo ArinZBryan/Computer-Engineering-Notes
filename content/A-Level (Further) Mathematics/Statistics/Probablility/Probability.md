@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics
 ## Definitions
 ### Experiments
 An **experiment** is a repeatable process that gives rise a number of possible outcomes

@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differential-equations 
 There are many types of differential equation that are impossible to solve arithmetically. Thus, it is useful to be able to find approximations to the answer to these equations. This can be done by giving some starting conditions, and using [Maclaurin / Taylor series](../../Sums%20and%20Series/Taylor%20Series%20and%20Maclaurin%20Series.md).
 
 **Example from the textbook:***

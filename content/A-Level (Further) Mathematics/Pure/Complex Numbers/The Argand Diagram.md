@@ -3,6 +3,7 @@ title: The Argand Diagram
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/complex-numbers
 ---
 
 [Open PDF](./The Argand Diagram.pdf)

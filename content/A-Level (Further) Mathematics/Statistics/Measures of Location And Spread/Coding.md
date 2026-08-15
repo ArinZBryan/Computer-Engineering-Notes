@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ## Why Code?
 Before the current A-Level specification allowed for graphing calculators, the more brute force methods of getting values such as mean and standard deviation were not able to be used in the exam. These questions may still come up, but are less prevalent now that you can just put the numbers into your calculator.
 

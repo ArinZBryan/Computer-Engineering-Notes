@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/integration 
 One method of integration is that of integration by parts. It is most used when two terms are multiplied. Integration by parts revolves around one central theorem, that must be substituted for:
 
 $$\int{u}dv = uv - \int{v}du$$

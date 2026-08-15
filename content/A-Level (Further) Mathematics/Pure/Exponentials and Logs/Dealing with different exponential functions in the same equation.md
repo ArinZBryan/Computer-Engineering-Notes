@@ -3,6 +3,7 @@ title: Dealing with different exponential functions in the same equation
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/standard-functions/exponentials-and-logarithms
 ---
 
 [Open PDF](./Dealing with different exponential functions in the same equation.pdf)

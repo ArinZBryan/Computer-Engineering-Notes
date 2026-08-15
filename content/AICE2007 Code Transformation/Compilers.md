@@ -1,3 +1,4 @@
+#software/compilers
 A compiler is simply a program that translates programs of one form into programs of another form. Typically, this means translating a program in some high-level language into programs of a low-level language (machine code). This is not a rule though - _transpilers_, such as the Typescript compiler, are a type of compiler that compiles one high-level language into another.
 
 This is necessary simply for the reason that programming in machine code directly is difficult and often error-prone. Thus, higher-level source-code languages often are designed to be more expressive, abstract and provide redundancies, to help humans catch mistakes early. Low-level languages don't provide these affordances, simply for the reason that their closest target - the machine - simply doesn't understand them.

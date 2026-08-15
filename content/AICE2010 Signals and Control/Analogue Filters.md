@@ -1,3 +1,4 @@
+#maths/applied-maths/signals-and-control/filters 
 A filter is just a system that we design to have specific properties when applied to the output of another system. When the input system is an [LTI system](./Systems.md#LTI%20Systems), this can be represented by:$$Y(s) = G(s)X(s)$$Where $Y(s)$ is the resultant system after the filter has been applied and $X(s)$ is the system producing the signal that is being filtered.
 
 >[!info]- Why does convolution create application here?

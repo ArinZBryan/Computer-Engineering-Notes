@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differential-equations 
 A set of coupled differential equations will be of the form:
 $$\frac{dx}{dt} = f(x) + g(y)$$
 $$\frac{dy}{dt} = h(x) + i(y)$$

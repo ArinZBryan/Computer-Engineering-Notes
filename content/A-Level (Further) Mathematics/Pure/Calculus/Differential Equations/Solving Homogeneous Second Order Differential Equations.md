@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differential-equations 
 If solving a differential equation of the form:
 $$a\frac{d^2y}{dx^2}+b\frac{dy}{dx} + cy = 0$$
 we can turn this into an auxiliary equation (abbreviated as AE) of the form $a\lambda^2+b\lambda+c=0$, solving for $\lambda$.

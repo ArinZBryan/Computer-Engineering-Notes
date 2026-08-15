@@ -1,5 +1,4 @@
-
-
+#maths/pure-maths/calculus/integration 
 ### Integrating $\frac{1}{a^2 + x^2}$ and $\frac{1}{\sqrt{a^2 - x^2}}$
 Though the answer to these questions is given as a formula in the formula book, it is important to know what to do in these situations:
 

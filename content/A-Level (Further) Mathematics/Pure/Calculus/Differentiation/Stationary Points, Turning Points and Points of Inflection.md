@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differentiation  
 Consider the cubic $y=f(x)$
 
 ![A graph of a cubic](../../../Images/points_on_a_curve.drawio.svg)

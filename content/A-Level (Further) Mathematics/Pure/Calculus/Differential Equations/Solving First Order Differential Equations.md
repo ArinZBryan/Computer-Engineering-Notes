@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differential-equations 
 Consider a 1st order differential equation of the form:
 $\frac{dy}{dx} + P(x)y = Q(x)$
 If you multiply both sides by the 'Integrating Factor' $f(x)$, where $f(x) = e^{\int P(x)dx}$, then we find that:

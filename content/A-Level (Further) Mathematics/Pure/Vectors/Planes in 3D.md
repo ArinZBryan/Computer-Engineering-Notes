@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra #maths/pure-maths/graphing
 ### Equations
 ##### Dot Product
 $(r-a)\cdot n = 0$ or $r\cdot n = a\cdot n$

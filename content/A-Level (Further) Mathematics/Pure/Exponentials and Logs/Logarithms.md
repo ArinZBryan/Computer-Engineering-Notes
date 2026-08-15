@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/exponentials-and-logarithms 
 ## The definition of a log:  
 
 $p^q = r \leftrightarrow \log_p{r} = q$

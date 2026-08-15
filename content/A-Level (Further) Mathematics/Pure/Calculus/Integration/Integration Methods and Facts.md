@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/integration
 ### Odd Powers of $\sin$/$\cos$
 $\int{\cos^3(x)}dx = \int{\cos(x)\cos^{2}(x)}dx = \int{\cos(x)(1-\sin^2(x))}dx = \int{\cos(x)-\cos(x)\sin^2(x)}dx$
 > This applies to all odd powers, not just 3. It also applies to sin in exactly the same way.

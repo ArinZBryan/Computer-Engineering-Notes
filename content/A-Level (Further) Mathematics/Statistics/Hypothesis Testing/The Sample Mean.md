@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 For any given population it can often be difficult or impractical to find the true value of the **population mean, $\mu$**
     - The population could be too large to collect data using a [census](../Collecting%20Data/Populations%20and%20Samples.md) or
     - Collecting the data could compromise the individual data values and therefore taking a [census](../Collecting%20Data/Populations%20and%20Samples.md) could destroy the population

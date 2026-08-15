@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/polynomials #maths/pure-maths/graphing
 There are two major ways of expressing a straight line:
 - $y = mx + c$
 - $y - y_1 = m(x - x_1)$

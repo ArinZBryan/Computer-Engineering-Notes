@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus 
 Newtonian Iteration, also known as the 'Newton-Raphson Method' is a method of approximating the roots of any differentiable function.
 It is important to note that if the function does not have any roots, then the iteration will not converge, and will last forever, and if the iteration happens upon a stationary point, the iteration will terminate, having divided by zero.
 

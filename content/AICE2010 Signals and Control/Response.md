@@ -1,3 +1,4 @@
+#maths/applied-maths/signals-and-control/systems
 For any causal [LTI system](./Systems#LTI%20Systems) described by a differential equation, we can describe it in the form of:
 $$y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_0y=b_mx^x+b_{m-1}x^{(m-1)}+\dots+b_0x\hspace{12pt}n\ge m$$
 When one of these systems can be solved analytically, we always get an answer with the general form of the sum of some function that decays to zero and one that doesn't.

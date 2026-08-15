@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/summations 
 An arithmetic series of the form $x_n = a + d(n-1)$ can be summed. It is possible that in an exam, that you will be asked to derive the sum of such an arithmetic sequence.
 
 Forwards: 

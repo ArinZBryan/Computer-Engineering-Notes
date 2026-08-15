@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 The PMCC (Product-Moment-Correlation-Coefficient) is a measure of how 'correlated' two variables are. 
 - A PMCC close to 1 means a strong positive correlation
 - A PMCC close to -1 means a strong negative correlation

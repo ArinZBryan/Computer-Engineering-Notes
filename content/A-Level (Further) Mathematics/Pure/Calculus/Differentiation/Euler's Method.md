@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differentiation 
 ### First Order Differential Equations
 When defining differentiation from first principals, we get that
 $$f'(x) = \lim_{h\to 0}\frac{f(x+h)- f(x)}{h}$$

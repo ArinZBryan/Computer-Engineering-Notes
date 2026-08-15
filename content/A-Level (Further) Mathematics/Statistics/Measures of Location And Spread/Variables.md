@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ### Variables in algebra vs stats
 ##### Similarities
 - Just like in algebra, variables in stats represent the value of some quantity, eg. shoe size, height, colour

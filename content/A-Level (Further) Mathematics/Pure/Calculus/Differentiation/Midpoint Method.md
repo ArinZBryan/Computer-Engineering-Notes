@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differential-equations 
 [Euler's Method](Euler's%20Method.md) needs a function with a stable gradient, or rather a consistently small second derivative. We can simply improve the accuracy of the approximation by using the midpoint between two points, rather than using the points themselves:
 $$f'(a) \approx \frac{f(a + h) - f(a - h)}{2h}$$
 Or rather using the more useful iterative version:

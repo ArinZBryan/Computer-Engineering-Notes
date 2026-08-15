@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ### Standard Normal Distribution
 The standard normal distribution is one where the mean is zero, and the [standard deviation](../Measures%20of%20Location%20And%20Spread/Variance%20and%20Standard%20Deviation.md#Standard%20Deviation) is 1. This can be represented in two ways:
 $X\sim N(0,1^2)$ or $\phi(Z)$, where $Z = \frac{X -\mu}{\sigma}$

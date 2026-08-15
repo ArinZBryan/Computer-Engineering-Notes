@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 [Random sampling](Random%20Sampling.md) can be problematic because often, the sampling frame is not known, so if a random sample was taken from the population, the results could be skewed.
 
 There are two types of Non-Random Sampling

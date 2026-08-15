@@ -1,5 +1,5 @@
+#maths/pure-maths/linear-algebra 
 An invariant point is a point, that when transformed by a given transformation, is transformed unto itself. ie. $\begin{pmatrix}a&b\newline c&d\end{pmatrix}\begin{pmatrix}x\newline y\end{pmatrix} = \begin{pmatrix}x\newline y\end{pmatrix}$
-
 ## Invariant Points
 When it comes to linear transformations, either the origin is the only invariant point, or the invariant points lie on a straight line through the origin.
 

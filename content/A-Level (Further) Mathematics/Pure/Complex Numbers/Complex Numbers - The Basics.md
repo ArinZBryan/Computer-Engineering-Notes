@@ -3,6 +3,7 @@ title: Complex Numbers - The Basics
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/complex-numbers
 ---
 
 [Open PDF](./Complex Numbers - The Basics.pdf)

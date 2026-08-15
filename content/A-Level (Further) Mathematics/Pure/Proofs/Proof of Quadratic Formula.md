@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/polynomials 
 1. $ax^2 + bx + c = 0$  
 (the a quadratic polynomial)
 

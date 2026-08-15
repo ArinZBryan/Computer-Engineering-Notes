@@ -1,3 +1,4 @@
+#maths/applied-maths/mechanics #maths/pure-maths/calculus/differential-equations 
 ### Simple Harmonic Motion
 
 ![Spring With Ball](./../../../Images/SHM-Spring-Horizontal.svg |200)

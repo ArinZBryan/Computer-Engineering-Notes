@@ -7,20 +7,20 @@ Like in x86 where there are multiple calling conventions that can be used (`__st
 When calling a function, the registers of the calling code need to be set up to allow for the function to be called. The below table defines the RV32I registers and which code is responsible for saving the values of these registers to the stack before use/function calls.
 
 | Register Name | [Register Alias](RISC-V%20Instructions.md#Register%20Aliases) | Saved By |
-| ------------- | ---------------------------------------------------------- | -------- |
-| `x0`          | `zero`                                                     | N/A      |
-| `x1`          | `ra`                                                       | Caller   |
-| `x2`          | `sp`                                                       | Callee   |
-| `x3`          | `gp`                                                       |          |
-| `x4`          | `tp`                                                       |          |
-| `x5`          | `t0`                                                       | Caller   |
-| `x6`-`x7`     | `t1`-`t2`                                                  | Caller   |
-| `x8`          | `s0`/`fp`                                                  | Callee   |
-| `x9`          | `s1`                                                       | Callee   |
-| `x10`-`x11`   | `a0`-`a1`                                                  | Caller   |
-| `x12`-`x17`   | `a2`-`a7`                                                  | Caller   |
-| `x18`-`x27`   | `s2`-`s11`                                                 | Callee   |
-| `x28`-`x31`   | `t3`-`t6`                                                  | Caller   |
+| ------------- | ------------------------------------------------------------- | -------- |
+| `x0`          | `zero`                                                        | N/A      |
+| `x1`          | `ra`                                                          | Caller   |
+| `x2`          | `sp`                                                          | Callee   |
+| `x3`          | `gp`                                                          |          |
+| `x4`          | `tp`                                                          |          |
+| `x5`          | `t0`                                                          | Caller   |
+| `x6`-`x7`     | `t1`-`t2`                                                     | Caller   |
+| `x8`          | `s0`/`fp`                                                     | Callee   |
+| `x9`          | `s1`                                                          | Callee   |
+| `x10`-`x11`   | `a0`-`a1`                                                     | Caller   |
+| `x12`-`x17`   | `a2`-`a7`                                                     | Caller   |
+| `x18`-`x27`   | `s2`-`s11`                                                    | Callee   |
+| `x28`-`x31`   | `t3`-`t6`                                                     | Caller   |
 Most important of these are the `a0`-`a7` registers, which act as the arguments and will contain return values when returning from a function. The `s0`-`s11` registers can and often are also used as arguments to functions, but they have to be treated differently by the calling code - the `aX`  argument registers can be freely overwritten by the callee, so if the calling code needs to use the value in there again after the function returns, the caller will need to save it to the stack. On the other hand, the `sXX` saved registers must not be changed by callee code. This means that the calling code does not save its value to the stack, but if the callee wants to change its value, it must first save it to the stack.
 
 The `tX` temporary registers are generally never saved (though they can be), as it is expected that they can and will be overwritten by any function which want to use them for any reason.

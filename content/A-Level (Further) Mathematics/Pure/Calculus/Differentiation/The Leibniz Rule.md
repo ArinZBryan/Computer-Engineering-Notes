@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differentiation 
 When asked for the nth derivative of some function $f(x)$, where $f(x) = g(x)\times q(x)$, and $g(x), q(x)$ can be infinitely differentiated. It is possible to quickly get the solution.
 
 Simply, we can combine the method for binomial expansion and differentiation to get $f^{(n)}(x)$.

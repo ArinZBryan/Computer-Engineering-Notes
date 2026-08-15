@@ -3,6 +3,7 @@ title: Modulus-Argument Form
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/complex-numbers
 ---
 
 [Open PDF](./Modulus-Argument Form.pdf)

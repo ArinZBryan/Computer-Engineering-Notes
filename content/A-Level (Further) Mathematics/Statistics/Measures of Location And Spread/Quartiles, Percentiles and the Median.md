@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ## Median
 To find a median of ungrouped data, the position to take is found by using the equation: $\frac{1}{2}n$. If the value given is whole, use the midpoint between that position and the next, otherwise, round up to the next whole number, and use the value at that index.
 

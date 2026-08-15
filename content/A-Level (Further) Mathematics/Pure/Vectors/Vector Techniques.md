@@ -1,3 +1,4 @@
+#maths/pure-maths/linear-algebra 
 ### Angles between Things
 Use the dot product's cosine definition to find the angle by taking the dot product of the following pairs of vectors:
 - Two Lines: dot product of direction vectors

@@ -3,6 +3,8 @@ title: Linear Transformations of Roots
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/graphing
+  - maths/pure-maths/standard-functions/polynomials
 ---
 
 [Open PDF](./Linear Transformations of Roots.pdf)

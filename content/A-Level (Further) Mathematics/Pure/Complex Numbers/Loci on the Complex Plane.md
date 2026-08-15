@@ -3,6 +3,7 @@ title: Loci on the Complex Plane
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/complex-numbers
 ---
 
 [Open PDF](./Loci on the Complex Plane.pdf)

@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus/differentiation
 For any equation in the form $y=f(x)$ where $f(x)$ is in the form $mx^k$, the gradient function, $\frac{dy}{dx}f(x)$ also known as $f'(x)$ is given by the formula $mkx^{k-1}$.
 
 ## A proof from first principles

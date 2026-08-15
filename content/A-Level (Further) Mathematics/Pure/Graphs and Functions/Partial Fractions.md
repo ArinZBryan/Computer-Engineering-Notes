@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions 
 Often, when faced with fractions of the form  $\frac{f(x)}{g(x)}$, where both $f(x)$ and $g(x)$ are polynomials, it is useful to split these up into multiple fractions, added together. More specifically, multiple fractions all with linear numerators.
 
 There are three cases that come up:

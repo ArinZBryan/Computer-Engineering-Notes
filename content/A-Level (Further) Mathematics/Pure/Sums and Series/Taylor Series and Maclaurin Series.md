@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus #maths/pure-maths/standard-functions/summations 
 It is possible to express any differentiable function as an infinite polynomial. This allows for an approximation to any function, just by increasing the number of terms calculated.
 
 ### Maclaurin Series

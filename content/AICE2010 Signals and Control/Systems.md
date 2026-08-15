@@ -1,4 +1,4 @@
-#maths/applied-maths/signals-and-control 
+#maths/applied-maths/signals-and-control/systems 
 
 A system is effectively some black-box function of some inputs that gives some outputs. Systems can take many forms: 
 - linear/non-linear

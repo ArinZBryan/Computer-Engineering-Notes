@@ -1,3 +1,4 @@
+#maths/pure-maths/calculus 
 $\DeclareMathOperator{\sech}{sech}\DeclareMathOperator{\csch}{csch}\DeclareMathOperator{\arcsec}{arcsec}\DeclareMathOperator{\arccot}{arccot}\DeclareMathOperator{\arccsc}{arccosec}\DeclareMathOperator{\arcosh}{arcosh}\DeclareMathOperator{\arsinh}{arsinh}\DeclareMathOperator{\artanh}{artanh}\DeclareMathOperator{\arsech}{arsech}\DeclareMathOperator{\arcsch}{arcosech}\DeclareMathOperator{\arcoth}{arcoth}$
 ## Integration
 $\int{x^n}dx = \frac{x^{n+1}}{n+1} + c$ 

@@ -1,4 +1,4 @@
-# Trigonometric rules
+#maths/pure-maths/trigonometry
 The following rules work for any triangle, where the sides and angles are labeled as below:
 
 ![Triangle Labeled](../../Images/labeled_triangle_trig_rules.drawio.svg)

@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 Ordinarily we would want each thing in our sampling frame to have an **equal chance of being chosen**, in order to **avoid bias**.  
 This is known as <u><i>random sampling</i></u>. There are a few ways to do this...
 

@@ -1,3 +1,4 @@
+#maths/pure-maths/complex-numbers 
 To find the nth root of any number, follow the following steps:
 1. Get the modulus and argument
 2. Add "$+2\pi k$" to the argument, where $k\in\mathbb{Z}$.

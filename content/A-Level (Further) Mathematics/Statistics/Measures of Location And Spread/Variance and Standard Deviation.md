@@ -1,3 +1,4 @@
+#maths/applied-maths/statistics 
 ### Variance
 Variance is a measure of spread that takes all values into account. Variance by definition, is the **average squared distance from the mean**. It is notated as $\text{Var}(x)$
 

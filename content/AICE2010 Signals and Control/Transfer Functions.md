@@ -1,4 +1,4 @@
-#maths/applied-maths/signals-and-control #maths/pure-maths/calculus/differential-equations 
+#maths/applied-maths/signals-and-control/systems #maths/pure-maths/calculus/differential-equations 
 For any given [Linear Time-Invariant system](./Systems.md#LTI%20Systems), it can be characterised by either its [impulse response](./Systems.md#Calculating%20Impulse%20Responses) or its _transfer function._ 
 
 By the [Laplace transform](./Laplace%20Transforms.md), any system $y(t) = x(t)*h(t)$ can be decomposed into complex exponentials of the form $ke^{st}$, where $s$ is a _complex frequency_ of the form $s = \alpha + j\omega$. Specifically, $\alpha$ is the 'decay coefficient', which determines whether the signal's amplitude grows ($\alpha > 1$), is constant ($\alpha = 1$) or decays ($\alpha < 1$). $\omega$ is the _angular frequency_ in rad/s of the complex frequency.

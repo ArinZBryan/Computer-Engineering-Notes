@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/summations 
 ## Summation Identities
 $\sum^n_{r=1}kf(r) \equiv k\sum^n_{r=1}f(r)$
 

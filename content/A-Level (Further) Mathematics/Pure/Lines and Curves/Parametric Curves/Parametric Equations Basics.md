@@ -3,6 +3,7 @@ title: Parametric Equations Basics
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/graphing
 ---
 
 [Open PDF](./Parametric Equations Basics.pdf)

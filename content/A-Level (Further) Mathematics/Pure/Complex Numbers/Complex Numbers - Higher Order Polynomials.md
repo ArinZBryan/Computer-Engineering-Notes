@@ -3,6 +3,7 @@ title: Complex Numbers - Higher Order Polynomials
 type: pdf
 tags:
   - pdf
+  - maths/pure-maths/complex-numbers
 ---
 
 [Open PDF](./Complex Numbers - Higher Order Polynomials.pdf)

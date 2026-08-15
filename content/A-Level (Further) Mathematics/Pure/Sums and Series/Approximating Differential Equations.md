@@ -1,3 +1,4 @@
+#maths/pure-maths/standard-functions/summations
 There are some [differential equations](../Calculus/Differential%20Equations/Solving%20Non-Homogenous%202nd%20Order%20Differential%20Equations.md) that cannot be solved. One example of that is the following: $\frac{dy}{dx} = e^{-\frac{x^2}{2}}$. It is mathematically impossible to find an algebraic form for $y$. However, by using [Taylor Series](Taylor%20Series%20and%20Maclaurin%20Series.md), we can approximate $y$ around a certain value.
 
 Here is how you would solve the above differential equation:

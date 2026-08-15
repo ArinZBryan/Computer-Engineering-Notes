@@ -1,3 +1,4 @@
+#software/compilers/code-generation #hardware/cpus 
 x86 (IA32) and x86_64 (AMD64, x64) are instruction-set architectures used by most modern processors found in desktops, laptops, servers and PCs everywhere. It is a CISC instruction set with a truly monstrous number of instructions and due to its longevity, many decisions made as to the format and structure of instructions seem strange. In most cases, this is simply to ensure proper backwards compatibility with previous versions of the ISA.
 
 While the base x86 instruction set was originally not to complex on the original Intel 8086, it has since had numerous extensions adding capabilities from floating-point and SIMD to dedicated casting and encryption instructions.
@@ -132,4 +133,9 @@ Standard x86/86_64 does not define a specific calling-convention as 'correct'. I
 - `SystemV_x64` (Used by Linux, MacOS)
 For a more extensive list of calling conventions on x86 or x86_64, [see here](https://en.wikipedia.org/wiki/X86_calling_conventions)
 
-On X86Lite systems, only the `SystemV_x64` calling convention is supported.
+On X86Lite systems, only the `SystemV_x64` calling convention is supported. 
+##### System V AMD64 ABI
+- Arguments are placed into a set of registers in a given order, then excess arguments are placed onto the stack
+	- Integer Arguments: `RDI`, `RSI`, `RDX`, `RCX`, `R8`, `R9`
+	- Floating-Point Arguments: `XMM0`, `XMM1`, `XMM2`, `XMM3`, `XMM4`, `XMM5`, `XMM6`, `XMM7`
+- Floating-Point return values are put in `XMM0` if it fits in 64-bits, also using `XMM1` if 128 bits is needed. With AVX-2 and AVX-512, the YMM and ZMM registers may be used instead, permitting up to 1024 bits to be returned with AVX-512. Integer return types are placed in `RAX` if they fit in 64 bits, or is split between `RAX` and `RDX` if it fits in 128 bits.
