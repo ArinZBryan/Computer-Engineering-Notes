@@ -1,3 +1,5 @@
+# This repo is now archived. See the [ArinZBryan/Computer-Engineering](https://github.com/ArinZBryan/Computer-Engineering) repository for the continuation of this one using Quartz v5.
+
 # Quartz v4
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
